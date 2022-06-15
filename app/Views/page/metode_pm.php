@@ -1,0 +1,774 @@
+<?= $this->extend('layout/index') ?>
+<?= $this->section('content') ?>
+			<div class="content">
+				<div class="page-inner">
+					<div class="page-header">
+						<h4 class="page-title">Profile Matching</h4>
+						<ul class="breadcrumbs">
+							<li class="nav-home">
+								<a href="#">
+									<i class="flaticon-home"></i>
+								</a>
+							</li>
+							<li class="separator">
+								<i class="flaticon-right-arrow"></i>
+							</li>
+							<li class="nav-item">
+								<a href="#">Metode Pengujian</a>
+							</li>
+							<li class="separator">
+								<i class="flaticon-right-arrow"></i>
+							</li>
+							<li class="nav-item">
+								<a href="#">Profile Matching</a>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="d-flex align-items-center">
+										<h4 class="card-title">Add Alternatif</h4>
+										<!-- <div class="btn btn-group"> -->
+											<button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addRowModal">
+												<i class="fa fa-plus"></i>
+												Add Alternatif
+											</button>&nbsp;
+											<a href="<?=base_url('/pm/selisih_pm')?>" type="button" class="btn btn-success">
+												<i class="fas fa-angle-double-right"></i>
+												Selisih GAP
+											</a>
+										<!-- </div> -->
+									</div>
+									<!-- <div class="d-flex align-items-center">
+										<h4 class="card-title">Hitung Hasil</h4>
+										<a href="" type="button" class="btn btn-primary btn-round ml-auto">
+											<i class="fa fa-plus"></i>
+											Hitung Hasil
+										</a>
+									</div> -->
+								</div>
+								<div class="card-body">
+									<!-- Modal AddData-->
+									<div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header no-bd">
+													<h5 class="modal-title">
+														<span class="fw-mediumbold">
+														New</span> 
+														<span class="fw-light">
+															Alternatif
+														</span>
+													</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<!-- <p class="small">Create a new row using this form, make sure you fill them all</p> -->
+													<form>
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="form-group form-group-default">
+																	<label>Name Mahasiswa</label>
+																	<input id="addName" name="addName" type="text" class="form-control" placeholder="nama" required>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>IPK (K01)</label>
+																		<select name="addIpk" id="addIpk" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">3.51 - 4.00</option>
+							                                                <option value="4">3.01 - 3.50</option>
+							                                                <option value="3">2.53 - 3.00</option>
+							                                                <option value="2">2.04 - 2.50</option>
+							                                                <option value="1">1.01 - 2.00</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Nilai Matkul (K02)</label>
+																		<select name="addMatkul" id="addMatkul" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">A</option>
+							                                                <option value="4">A-</option>
+							                                                <option value="3">B</option>
+							                                                <option value="2">B-</option>
+							                                                <option value="1">C</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Sertifikat (K03)</label>
+																		<select name="addSertifikat" id="addSertifikat" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="3">Ada</option>
+							                                                <option value="0">Tidak Ada</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Kompetensi (K04)</label>
+																		<select name="addKompetensi" id="addKompetensi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Pengalaman (K05)</label>
+																		<select name="addPengalaman" id="addPengalaman" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Penguasaan Materi (K06)</label>
+																		<select name="addPeng_materi" id="addPeng_materi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Penyampaian Materi (K07)</label>
+																		<select name="addPeny_materi" id="addPeny_materi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Sikap (K08)</label>
+																		<select name="addSikap" id="addSikap" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Interaksi (K09)</label>
+																		<select name="addInteraksi" id="addInteraksi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Komitmen (K10)</label>
+																		<select name="addKomitmen" id="addKomitmen" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Konsisten (K11)</label>
+																		<select name="addKonsisten" id="addKonsisten" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Karakter (K12)</label>
+																		<select name="addKarakter" id="addKarakter" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<!-- <div class="col-md-6 pr-0">
+																<div class="form-group form-group-default">
+																	<label>Position</label>
+																	<input id="addPosition" type="text" class="form-control" placeholder="fill position">
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group form-group-default">
+																	<label>Office</label>
+																	<input id="addOffice" type="text" class="form-control" placeholder="fill office">
+																</div>
+															</div> -->
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer no-bd">
+													<button type="button" id="addRowButton" class="btn btn-primary">Add</button>
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Modal EditData -->
+									<div class="modal fade" id="editRowModal" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header no-bd">
+													<h5 class="modal-title">
+														<span class="fw-mediumbold">
+														Edit</span> 
+														<span class="fw-light">
+															User
+														</span>
+													</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<!-- <p class="small">Create a new row using this form, make sure you fill them all</p> -->
+													<form>
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="form-group form-group-default">
+																	<label>Name</label>
+																	<input id="editId" name="editId" type="hidden" class="form-control" readonly>
+																	<input id="editName" name="editName" type="text" class="form-control" placeholder="nama" required>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>IPK (K01)</label>
+																		<select name="editIpk" id="editIpk" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">3.51 - 4.00</option>
+							                                                <option value="4">3.01 - 3.50</option>
+							                                                <option value="3">2.53 - 3.00</option>
+							                                                <option value="2">2.04 - 2.50</option>
+							                                                <option value="1">1.01 - 2.00</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Nilai Matkul (K02)</label>
+																		<select name="editMatkul" id="editMatkul" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">A+</option>
+							                                                <option value="4">A</option>
+							                                                <option value="3">A-</option>
+							                                                <option value="2">B+</option>
+							                                                <option value="1">B</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Sertifikat (K03)</label>
+																		<select name="editSertifikat" id="editSertifikat" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="3">Ada</option>
+							                                                <option value="0">Tidak Ada</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Kompetensi (K04)</label>
+																		<select name="editKompetensi" id="editKompetensi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Pengalaman (K05)</label>
+																		<select name="editPengalaman" id="editPengalaman" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Penguasaan Materi (K06)</label>
+																		<select name="editPeng_materi" id="editPeng_materi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Penyampaian Materi (K07)</label>
+																		<select name="editPeny_materi" id="editPeny_materi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Sikap (K08)</label>
+																		<select name="editSikap" id="editSikap" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Interaksi (K09)</label>
+																		<select name="editInteraksi" id="editInteraksi" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Komitmen (K10)</label>
+																		<select name="editKomitmen" id="editKomitmen" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Konsisten (K11)</label>
+																		<select name="editKonsisten" id="editKonsisten" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group form-group-default">
+																	<label>Karakter (K12)</label>
+																		<select name="editKarakter" id="editKarakter" class="form-control" required>
+							                                                <option >-Pilih-</option>
+							                                                <option value="5">Sangat Baik</option>
+							                                                <option value="4">Baik</option>
+							                                                <option value="3">Cukup</option>
+							                                                <option value="2">Kurang</option>
+							                                                <option value="1">Sangat Kurang</option>
+							                                             </select>
+																</div>
+															</div>
+
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer no-bd">
+													<button type="button" id="editRowButton" class="btn btn-primary">Edit</button>
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+
+									<div class="table-responsive">
+										<table id="add-row" class="display table table-striped table-hover table-head-bg-primary mt-4" >
+											<thead>
+												<tr>
+													<th rowspan ="2">#</th>
+					                                <th rowspan ="2">Alternatif</th>
+					                                <th colspan ="3" style="text-align: center;">Administrasi</th>
+					                                <th colspan ="3" style="text-align: center;">Kompetensi</th>
+					                                <th colspan ="4" style="text-align: center;">Mengajar</th>
+					                                <th colspan ="2" style="text-align: center;">Wawancara</th>
+													<th rowspan ="2" style="width: 10%">Action</th>
+												</tr>
+												<tr>
+													<th>K01</th>
+					                                <th>K02</th>
+					                                <th>K03</th>
+					                                <th>K04</th>
+					                                <th>K05</th>
+					                                <th>K06</th>
+					                                <th>K07</th>
+					                                <th>K08</th>
+					                                <th>K09</th>
+					                                <th>K10</th>
+					                                <th>K11</th>
+					                                <th>K12</th>
+												</tr>
+											</thead>
+											<tbody id="show_data">
+												<!-- <?php //$i=1; foreach($user as $row): ?>
+												<tr>
+													<td><?php //echo$i++?></td>
+					                                <td><?php //echo $row->nama; ?></td>
+					                                <td><?php //echo $row->username; ?></td>
+					                                <td><?php //echo $row->role; ?></td>
+					                                <td><?php //echo $row->status; ?></td>
+					                                <td><?php //echo $row->role_id; ?></td>
+					                                <td><?php //echo $row->aktif; ?></td>
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+																<i class="fa fa-times"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<?php //endforeach; ?> -->
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="<?php echo site_url('assets/js/core/jquery.3.2.1.min.js')?>"></script>
+			<script src="<?php echo site_url('assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')?>"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					tampil_data();
+					function tampil_data(){
+		            $.ajax({
+		                type  : 'GET',
+		                url   : '<?php echo base_url()?>/pm/show_pm_kriteria',
+		                async : true,
+		                dataType : 'json',
+		                success : function(data){
+		                    var html = '';
+		                    var i;
+		                    for(i=0; i<data.length; i++){
+		                    // var link = '<?php //echo base_url()?>menu/menu/roleAccess/'+data[i].id;
+		                        html += '<tr>'+
+		                                '<td>'+(i+1)+'</td>'+
+		                                '<td>'+data[i].alternatif+'</td>'+
+		                                '<td>'+data[i].k1+'</td>'+
+		                                '<td>'+data[i].k2+'</td>'+
+		                                '<td>'+data[i].k3+'</td>'+
+		                                '<td>'+data[i].k4+'</td>'+
+		                                '<td>'+data[i].k5+'</td>'+
+		                                '<td>'+data[i].k6+'</td>'+
+		                                '<td>'+data[i].k7+'</td>'+
+		                                '<td>'+data[i].k8+'</td>'+
+		                                '<td>'+data[i].k9+'</td>'+
+		                                '<td>'+data[i].k10+'</td>'+
+		                                '<td>'+data[i].k11+'</td>'+
+		                                '<td>'+data[i].k12+'</td>'+
+		                                '<td>'+
+		                                    // '<a href="'+link+'" class="btn btn-primary btn-xs"><i class="fa fa-wrench"></i></a>'+' '+
+		                                    '<div class="btn btn-group"><a href="javascript:;" data-toggle="tooltip" class="btn btn-link btn-primary btn-xs item_edit" data-original-title="Edit Task" data="'+data[i].id_alternatif+'"><i class="fa fa-edit"></i></a>'+
+		                                    
+		                                    '<a href="javascript:;" data-toggle="tooltip" class="btn btn-link btn-danger btn-xs item_hapus" data-original-title="Remove" data="'+data[i].id_alternatif+'"><i class="fa fa-times"></i></a></div>'+
+		                                '</td>'+
+		                                '</tr>';
+		                    }
+		                    $('#show_data').html(html);
+		                    $('#add-row').dataTable({
+		                        "searching": false,
+		                        "paging":   false,
+		                        "bLengthChange": false,
+		                        // "info":     false,
+		                        "ordering": false,
+		                    });
+		                    $.fn.dataTable.ext.errMode = 'none';
+
+		                }
+		 
+		            });
+		        }
+				
+					$('#addRowButton').click(function(){
+		            var name=$('#addName').val();
+		            var ipk=$('#addIpk').val();
+		            var matkul=$('#addMatkul').val();
+		            var sertifikat=$('#addSertifikat').val();
+		            var kompetensi=$('#addKompetensi').val();
+		            var pengalaman=$('#addPengalaman').val();
+		            var peng_materi=$('#addPeng_materi').val();
+		            var peny_materi=$('#addPeny_materi').val();
+		            var sikap=$('#addSikap').val();
+		            var interaksi=$('#addInteraksi').val();
+		            var komitmen=$('#addKomitmen').val();
+		            var konsisten=$('#addKonsisten').val();
+		            var karakter=$('#addKarakter').val();
+		            
+		            $.ajax({
+		                type : "POST",
+		                url  : "<?php echo base_url('/pm/simpan_kriteria')?>",
+		                dataType : "JSON",
+		                data : {alternatif:name, k1:ipk, k2:matkul, k3:sertifikat, k4:kompetensi, k5:pengalaman, k6:peng_materi, k7:peny_materi, k8:sikap, k9:interaksi, k10:komitmen, k11:konsisten, k12:karakter},
+		                success: function(data){
+		                	if (data=='gagal') {
+		                		$('#addRowModal').modal('hide');
+		                		$.notify({
+									icon: 'flaticon-add-user',
+									title: 'Gagal',
+									message: 'Gagal menambahkan!',
+								},{
+									type: 'danger',
+									placement: {
+										from: "top",
+										align: "right"
+									},
+									time: 1000,
+								});
+		                	}else{
+		                		$('#addName').val("");$('#addIpk').val("");$('#addMatkul').val("");$('#addSertifikat').val("");$('#addKompetensi').val("");$('#addPengalaman').val("");$('#addPeng_materi').val("");$('#addPeny_materi').val("");$('#addSikap').val("");$('#addInteraksi').val("");$('#addKomitmen').val("");$('#addKonsisten').val("");$('#addKarakter').val("");
+			                    $('#addRowModal').modal('hide');
+			                    tampil_data();
+			                    $.notify({
+									icon: 'flaticon-add-user',
+									title: 'Success',
+									message: 'Berhasil menambahkan!',
+								},{
+									type: 'info',
+									placement: {
+										from: "top",
+										align: "right"
+									},
+									time: 1000,
+								});
+		                	}
+		                }
+		            });
+		            return false;
+		       		});
+
+		       		//GET HAPUS
+			        $(document).on('click', '.item_hapus', function(){
+			          var id = $(this).attr('data');
+			          swal({
+			              title: "Kamu Yakin?",
+			              text: "Data akan terhapus.",
+			              icon: "warning",
+			              buttons: true,
+			              dangerMode: true,
+			            })
+			            .then((willDelete) => {
+			              if (willDelete) {
+			                  $.ajax({
+			                      url : "<?php echo base_url(); ?>/pm/hapus_kriteria",
+			                      method :"POST",
+			                      data : {id:id},
+			                      success : function(data){
+			                          
+			                          swal("Data berhasil dihapus!", {
+			                          icon: "success",
+			                          });
+			                              tampil_data();
+			                      },
+			            
+			                    })
+			                  
+			              } else {
+			                swal("Hapus dibatalkan!");
+			              }
+			            });
+			        });
+			        //GET UPDATE
+			        $('#show_data').on('click','.item_edit',function(){
+			            var id=$(this).attr('data');
+			            $.ajax({
+			                type : "GET",
+			                url  : "<?php echo base_url()?>/pm/get_kriteria",
+			                dataType : "JSON",
+			                data : {id:id},
+			                success: function(data){
+			                    $.each(data,function(id, menu){
+			                        $('#editRowModal').modal('show');
+			                        $('[name="editId"]').val(data.id_alternatif);
+			                        $('[name="editName"]').val(data.alternatif);
+			                        $('[name="editIpk"]').val(data.k1).selected = 'selected';
+			                        $('[name="editMatkul"]').val(data.k2).selected = 'selected';
+			                        $('[name="editSertifikat"]').val(data.k3).selected = 'selected';
+			                        $('[name="editKompetensi"]').val(data.k4).selected = 'selected';
+			                        $('[name="editPengalaman"]').val(data.k5).selected = 'selected';
+			                        $('[name="editPeng_materi"]').val(data.k6).selected = 'selected';
+			                        $('[name="editPeny_materi"]').val(data.k7).selected = 'selected';
+			                        $('[name="editSikap"]').val(data.k8).selected = 'selected';
+			                        $('[name="editInteraksi"]').val(data.k9).selected = 'selected';
+			                        $('[name="editKomitmen"]').val(data.k10).selected = 'selected';
+			                        $('[name="editKonsisten"]').val(data.k11).selected = 'selected';
+			                        $('[name="editKarakter"]').val(data.k12).selected = 'selected';
+			                    });
+			                }
+			            });
+			            return false;
+			        });
+			        //Update User
+			        $('#editRowButton').on('click',function(){
+			            var id = $('#editId').val();
+			            var name = $('#editName').val();
+			            var k1 = $('#editIpk').val();
+			            var k2 = $('#editMatkul').val();
+			            var k3 = $('#editSertifikat').val();
+			            var k4 = $('#editKompetensi').val();
+			            var k5 = $('#editPengalaman').val();
+			            var k6 = $('#editPeng_materi').val();
+			            var k7 = $('#editPeny_materi').val();
+			            var k8 = $('#editSikap').val();
+			            var k9 = $('#editInteraksi').val();
+			            var k10 = $('#editKomitmen').val();
+			            var k11 = $('#editKonsisten').val();
+			            var k12 = $('#editKarakter').val();
+			            $.ajax({
+			                type : "POST",
+			                url  : "<?php echo base_url('/pm/update_kriteria')?>",
+			                dataType : "JSON",
+			                data : {id:id, name:name, k1:k1, k2:k2, k3:k3, k4:k4, k5:k5, k6:k6, k7:k7, k8:k8, k9:k9, k10:k10, k11:k11, k12:k12},
+			                success: function(data){
+			                    // $('[name="editId"]').val("");
+			                    // $('[name="editName"]').val("");
+			                    // $('[name="editRole"]').val("");
+			                    // $('[name="editUsername"]').val("");
+			                    $('#editRowModal').modal('hide');
+			                    tampil_data();
+			                    $.notify({
+									icon: 'flaticon-add-user',
+									title: 'Success',
+									message: 'Edit Berhasil!',
+								},{
+									type: 'info',
+									placement: {
+										from: "top",
+										align: "right"
+									},
+									time: 1000,
+								});
+			                }
+			            });
+			            return false;
+			        });
+			        //GET UPDATE Pass
+			        // $('#show_data').on('click','.item_edit_pass',function(){
+			        //     var id=$(this).attr('data');
+			        //     $.ajax({
+			        //         type : "GET",
+			        //         url  : "<?php //echo base_url('/user/get_user')?>",
+			        //         dataType : "JSON",
+			        //         data : {id:id},
+			        //         success: function(data){
+			        //             $.each(data,function(id, menu){
+			        //                 $('#editPassRowModal').modal('show');
+			        //                 $('[name="editPassId"]').val(data.id);
+			        //             });
+			        //         }
+			        //     });
+			        //     return false;
+			        // });
+			        //Update Password
+			     //    $('#editPassRowButton').on('click',function(){
+			     //        var id = $('#editPassId').val();
+			     //        var pass = $('#editPass').val();
+			     //        $.ajax({
+			     //            type : "POST",
+			     //            url  : "<?php //echo base_url('/user/update_password')?>",
+			     //            dataType : "JSON",
+			     //            data : {id:id , pass:pass},
+			     //            success: function(data){
+			     //                $('[name="editId"]').val("");
+			     //                $('[name="editPass"]').val("");
+			     //                $('#editPassRowModal').modal('hide');
+			     //                tampil_data();
+			     //                $.notify({
+								// 	icon: 'flaticon-add-user',
+								// 	title: 'Success',
+								// 	message: 'Berhasil mengganti password!',
+								// },{
+								// 	type: 'info',
+								// 	placement: {
+								// 		from: "top",
+								// 		align: "right"
+								// 	},
+								// 	time: 1000,
+								// });
+			     //            }
+			     //        });
+			     //        return false;
+			     //    });
+
+				});
+			</script>
+
+<?= $this->endSection() ?>

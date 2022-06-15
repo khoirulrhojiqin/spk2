@@ -1,0 +1,93 @@
+CRITICAL - 2022-06-05 05:35:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_cf_sf()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-05 05:36:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_cf_sf()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-05 06:40:39 --> syntax error, unexpected ','
+#0 C:\laragon\www\spk2\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/pm/cf_sf')
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/pm/cf_sf')
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 07:20:41 --> Invalid file: /page/nilai_akhir.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/page/nilai_akh...')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/nilai_akh...', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\Pm.php(301): view('/page/nilai_akh...')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->nilai_akhir()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-05 07:20:45 --> Invalid file: /page/nilai_akhir.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/page/nilai_akh...')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/nilai_akh...', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\Pm.php(301): view('/page/nilai_akh...')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->nilai_akhir()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-05 07:25:05 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(332): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 332, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_akhir()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 07:28:58 --> syntax error, unexpected '?>'
+#0 C:\laragon\www\spk2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/metode_pm...', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\Pm.php(301): view('/page/metode_pm...')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->nilai_akhir()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-05 08:22:06 --> Undefined variable: session
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(383): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 383, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 08:22:18 --> Undefined variable: session
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(383): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 383, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 08:26:22 --> Undefined variable: numbers
+#0 C:\laragon\www\spk2\app\Views\page\metode_pm_nilai_akhir.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 158, Array)
+#1 C:\laragon\www\spk2\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\spk2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/metode_pm...', Array, true)
+#4 C:\laragon\www\spk2\app\Controllers\Pm.php(301): view('/page/metode_pm...')
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->nilai_akhir()
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-05 09:21:31 --> json_encode() expects parameter 2 to be int, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_encode() e...', 'C:\\laragon\\www\\...', 396, Array)
+#1 C:\laragon\www\spk2\app\Controllers\Pm.php(396): json_encode(Array, Array)
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan()
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-05 09:56:45 --> syntax error, unexpected '$output' (T_VARIABLE)
+#0 C:\laragon\www\spk2\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/pm/nilai_akhir')
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/pm/nilai_akhir')
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

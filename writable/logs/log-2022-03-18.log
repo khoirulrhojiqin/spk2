@@ -1,0 +1,510 @@
+CRITICAL - 2022-03-18 01:17:23 --> Invalid file: page/users.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page/users.php')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('page/users', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\Home.php(14): view('page/users')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Home->users()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-18 01:19:47 --> Cannot call constructor
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(809): App\Controllers\User->__construct()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 01:20:15 --> Invalid file: /users.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/users.php')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/users', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/users')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-18 01:24:10 --> Invalid file: /users.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/users.php')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/users', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/users')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-18 01:24:14 --> Invalid file: /users.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/users.php')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/users', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/users')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-18 01:24:40 --> Invalid file: /users.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/users.php')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/users', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/users')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-18 01:24:42 --> Invalid file: /users.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/users.php')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/users', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/users')
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-18 01:25:25 --> Undefined variable: i
+#0 C:\laragon\www\spk2\app\Views\page\users.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 221, Array)
+#1 C:\laragon\www\spk2\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\spk2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/users', Array, true)
+#4 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/page/users')
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-18 01:26:33 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\laragon\www\spk2\app\Views\page\users.php(323): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 323, Array)
+#1 C:\laragon\www\spk2\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\spk2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/users', Array, true)
+#4 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/page/users')
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-18 01:26:58 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\laragon\www\spk2\app\Views\page\users.php(376): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 376, Array)
+#1 C:\laragon\www\spk2\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\spk2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/users', Array, true)
+#4 C:\laragon\www\spk2\app\Controllers\User.php(17): view('/page/users')
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-18 01:49:08 --> Undefined property: App\Controllers\User::$db
+#0 C:\laragon\www\spk2\app\Controllers\User.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 76, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 01:49:19 --> Undefined property: App\Controllers\User::$db
+#0 C:\laragon\www\spk2\app\Controllers\User.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 76, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 01:55:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 01:56:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 01:57:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 01:58:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 01:58:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 01:58:50 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\laragon\www\spk2\app\Controllers\User.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\laragon\\www\\...', 77, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 01:59:16 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\laragon\www\spk2\app\Controllers\User.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\laragon\\www\\...', 77, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 02:06:37 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\laragon\\www\\...', 77, Array)
+#1 C:\laragon\www\spk2\app\Controllers\User.php(77): count(Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-18 02:07:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 03:14:20 --> Undefined variable: data_user
+#0 C:\laragon\www\spk2\app\Controllers\User.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 03:14:22 --> Undefined variable: data_user
+#0 C:\laragon\www\spk2\app\Controllers\User.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->simpan_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 04:30:50 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:51 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:52 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:53 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:53 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:53 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:53 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:54 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:57 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:30:59 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-18 04:31:53 --> Undefined variable: table
+#0 C:\laragon\www\spk2\app\Controllers\User.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 84, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->hapus_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 04:31:56 --> Undefined variable: table
+#0 C:\laragon\www\spk2\app\Controllers\User.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 84, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->hapus_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 04:34:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 04:34:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 04:34:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 04:35:22 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\laragon\www\spk2\app\Controllers\User.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\laragon\\www\\...', 92, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 04:36:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 04:36:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 04:38:14 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 102, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 04:51:01 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 102, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 04:53:17 --> Call to undefined method App\Models\M_user::getResult
+#0 C:\laragon\www\spk2\app\Controllers\User.php(93): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 04:58:11 --> Call to undefined method App\Models\M_user::getResult
+#0 C:\laragon\www\spk2\app\Controllers\User.php(93): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:01:01 --> Undefined variable: db
+#0 C:\laragon\www\spk2\app\Controllers\User.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 89, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:02:23 --> Object of class App\Controllers\User could not be converted to string
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 05:05:35 --> Too few arguments to function CodeIgniter\Database\BaseConnection::query(), 0 passed in C:\laragon\www\spk2\app\Controllers\User.php on line 103 and at least 1 expected
+#0 C:\laragon\www\spk2\app\Controllers\User.php(103): CodeIgniter\Database\BaseConnection->query()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:05:38 --> Too few arguments to function CodeIgniter\Database\BaseConnection::query(), 0 passed in C:\laragon\www\spk2\app\Controllers\User.php on line 103 and at least 1 expected
+#0 C:\laragon\www\spk2\app\Controllers\User.php(103): CodeIgniter\Database\BaseConnection->query()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:06:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 05:06:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 05:16:22 --> Call to undefined method App\Models\M_user::getResult
+#0 C:\laragon\www\spk2\app\Controllers\User.php(95): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:17:03 --> Call to undefined method App\Models\M_user::getResult
+#0 C:\laragon\www\spk2\app\Controllers\User.php(95): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:19:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 05:43:09 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:43:32 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:47:43 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:47:46 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:48:35 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:48:38 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:49:19 --> Too few arguments to function App\Controllers\User::get_user(), 0 passed in C:\laragon\www\spk2\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 05:49:21 --> Too few arguments to function App\Controllers\User::get_user(), 0 passed in C:\laragon\www\spk2\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 05:50:07 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:50:09 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 104, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 05:53:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 05:56:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-18 06:06:21 --> There is no data to update.
+#0 C:\laragon\www\spk2\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\spk2\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\laragon\www\spk2\system\Model.php(651): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\laragon\www\spk2\app\Controllers\User.php(127): CodeIgniter\Model->update(Array)
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_user()
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-18 06:07:24 --> There is no data to update.
+#0 C:\laragon\www\spk2\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\spk2\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\laragon\www\spk2\system\Model.php(651): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\laragon\www\spk2\app\Controllers\User.php(127): CodeIgniter\Model->update(Array)
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_user()
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-18 06:14:16 --> Undefined variable: news
+#0 C:\laragon\www\spk2\app\Controllers\User.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 139, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:14:31 --> Undefined variable: data_user
+#0 C:\laragon\www\spk2\app\Controllers\User.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 139, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:16:31 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 138, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:18:11 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 138, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:18:18 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 138, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:28:14 --> Undefined variable: data_user
+#0 C:\laragon\www\spk2\app\Controllers\User.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 146, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_password()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:28:19 --> Undefined variable: data_user
+#0 C:\laragon\www\spk2\app\Controllers\User.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 146, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_password()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:28:56 --> Undefined variable: data_user
+#0 C:\laragon\www\spk2\app\Controllers\User.php(147): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 147, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_password()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-18 06:29:16 --> Undefined variable: data2
+#0 C:\laragon\www\spk2\app\Controllers\User.php(147): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 147, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->update_password()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,264 @@
+CRITICAL - 2022-05-15 08:27:23 --> Undefined variable: data_kriteria
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:27:25 --> Undefined variable: data_kriteria
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:27:26 --> Undefined variable: data_kriteria
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:27:26 --> Undefined variable: data_kriteria
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:27:26 --> Undefined variable: data_kriteria
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:27:41 --> Undefined variable: data_kriteria
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-15 08:33:22 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-05-15 08:33:22 --> Unknown column 'id' in 'where clause'
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `m_...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `m_...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `m_...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `m_...', Array, false)
+#4 C:\laragon\www\spk2\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\spk2\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\spk2\app\Controllers\Saw.php(93): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->hapus_kriteria()
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#9 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-05-15 08:33:41 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-05-15 08:33:41 --> Unknown column 'id' in 'where clause'
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `m_...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `m_...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `m_...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `m_...', Array, false)
+#4 C:\laragon\www\spk2\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\spk2\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\spk2\app\Controllers\Saw.php(93): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->hapus_kriteria()
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#9 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-05-15 08:35:38 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-05-15 08:35:38 --> Unknown column 'id' in 'where clause'
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `m_...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `m_...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `m_...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `m_...', Array, false)
+#4 C:\laragon\www\spk2\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\spk2\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\spk2\app\Controllers\Saw.php(93): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->hapus_kriteria()
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#9 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-15 08:42:30 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:42:33 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:42:34 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:42:35 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:42:36 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\User.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_user()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:54:56 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->get_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:54:58 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->get_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:54:58 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->get_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:54:58 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->get_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:54:59 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->get_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:55:06 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->get_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 08:56:12 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 105, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->get_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 09:12:35 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(170): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 170, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->update_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 09:12:36 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(170): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 170, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->update_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 09:12:46 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(170): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 170, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->update_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 09:14:10 --> Undefined variable: hasil
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 169, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->update_kriteria()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 10:05:15 --> Invalid file: /page/metode_saw_result.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/page/metode_sa...')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/metode_sa...', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\Saw.php(28): view('/page/metode_sa...', Array)
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-15 19:35:25 --> Invalid file: /page/metode_saw_result.php
+#0 C:\laragon\www\spk2\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/page/metode_sa...')
+#1 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/metode_sa...', Array, true)
+#2 C:\laragon\www\spk2\app\Controllers\Saw.php(28): view('/page/metode_sa...', Array)
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-15 19:48:28 --> Undefined property: mysqli::$alternatif
+#0 C:\laragon\www\spk2\app\Views\page\metode_saw_result.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 76, Array)
+#1 C:\laragon\www\spk2\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\spk2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/metode_sa...', Array, true)
+#4 C:\laragon\www\spk2\app\Controllers\Saw.php(28): view('/page/metode_sa...', Array)
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-15 19:51:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(27): App\Models\M_saw->getResult_saw()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 19:52:33 --> Call to undefined method App\Models\M_saw::getResult
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(27): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 20:04:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(28): App\Models\M_saw->getNilai()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 20:04:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(28): App\Models\M_saw->getNilai()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 20:08:38 --> Undefined variable: max
+#0 C:\laragon\www\spk2\app\Views\page\metode_saw_result.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 51, Array)
+#1 C:\laragon\www\spk2\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\spk2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\spk2\system\Common.php(1089): CodeIgniter\View\View->render('/page/metode_sa...', Array, true)
+#4 C:\laragon\www\spk2\app\Controllers\Saw.php(29): view('/page/metode_sa...', Array)
+#5 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->result_saw()
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
