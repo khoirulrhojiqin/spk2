@@ -446,6 +446,10 @@
 									
 
 									<div class="table-responsive">
+										<button style="float: right;" class="btn btn-default ml-auto btn-xs btn-border" id="reset_pm">
+												<i class="fa fa-trash"></i>
+												Reset
+										</button><br>
 										<table id="add-row" class="display table table-striped table-hover table-head-bg-primary mt-4" >
 											<thead>
 												<tr>
@@ -767,6 +771,35 @@
 			     //        });
 			     //        return false;
 			     //    });
+			     $('#reset_pm').on('click',function(){
+			          swal({
+			              title: "Kamu Yakin?",
+			              text: "Data akan direset.",
+			              icon: "warning",
+			              buttons: true,
+			              dangerMode: true,
+			            })
+			            .then((willDelete) => {
+			              if (willDelete) {
+			                  $.ajax({
+			                      url : "<?php echo base_url(); ?>/pm/reset_data",
+			                      method :"POST",
+			                      // data : {id:id},
+			                      success : function(data){
+			                          
+			                          swal("Data berhasil dihapus!", {
+			                          icon: "success",
+			                          });
+			                              tampil_data();
+			                      },
+			            
+			                    })
+			                  
+			              } else {
+			                swal("Reset dibatalkan!");
+			              }
+			            });
+			            });
 
 				});
 			</script>

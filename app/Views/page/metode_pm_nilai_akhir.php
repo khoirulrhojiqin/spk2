@@ -39,10 +39,10 @@
 												<i class="fas fa-angle-double-left"></i>
 												Kembali
 											</a>&nbsp;
-											<!-- <a href="<?php //echo base_url('/pm/nilai_akhir')?>" type="button" class="btn btn-success">
-												<i class="fas fa-angle-double-right"></i>
-												Nilai Akhir
-											</a> -->
+											<button class="btn btn-success" id="simpan_data">
+												<i class="fas fa-save"></i>
+												Save Rank
+											</button>
 										<!-- </div> -->
 									</div>
 									<!-- <div class="d-flex align-items-center">
@@ -240,6 +240,37 @@
                
                 });
              $.fn.dataTable.ext.errMode = 'none';
+
+             $('#simpan_data').on('click',function(){
+		          swal({
+		              title: "Simpan Data ?",
+		              // text: "Simpan Data ?",
+		              icon: "info",
+		              buttons: true,
+		              dangerMode: false,
+		            })
+		            .then((willSave) => {
+		              if (willSave) {
+		                  $.ajax({
+		                      url : "<?php echo base_url(); ?>/pm/simpan_data",
+		                      method :"POST",
+		                      // data : {id:id},
+		                      success : function(data){
+		                          
+		                          swal("Data berhasil disimpan!", {
+		                          icon: "success",
+		                          });
+		                              // tampil_data();
+		                      },
+		            
+		                    })
+		                  
+		              } else {
+		                swal("Simpan dibatalkan!");
+		              }
+		            });
+		            });
+
           	})
 			</script>
 			

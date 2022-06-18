@@ -75,8 +75,8 @@
 		                                '<td>'+data[i].sertifikat+'</td>'+
 		                                '<td>'+
 		                                    // '<a href="'+link+'" class="btn btn-primary btn-xs"><i class="fa fa-wrench"></i></a>'+' '+
-		                                    '<div class="btn btn-group"><a href="javascript:;" data-toggle="tooltip" class="btn btn-primary btn-xs show_file_1" data-original-title="Edit Task" data="'+data[i].id+'"><i class="fa fa-file"></i> Transkrip</a>'+
-		                                    '<a href="javascript:;" data-toggle="tooltip" class="btn btn-success btn-xs show_file_2" data-original-title="Edit Task" data="'+data[i].id+'"><i class="fa fa-file"></i> Sertifikat</a>'+
+		                                    '<div class="btn btn-group"><a href="javascript:;" data-toggle="tooltip" class="btn btn-primary btn-xs show_file_1" data-original-title="Edit Task" data="'+data[i].id+'"><i class="fa fa-download"></i> Transkrip</a>'+
+		                                    '<a href="javascript:;" data-toggle="tooltip" class="btn btn-success btn-xs show_file_2" data-original-title="Edit Task" data="'+data[i].id+'"><i class="fa fa-download"></i> Sertifikat</a>'+
 		                                '</td>'+
 		                                '</tr>';
 		                    }

@@ -446,6 +446,10 @@
 									
 
 									<div class="table-responsive">
+										<button style="float: right;" class="btn btn-default ml-auto btn-xs btn-border" id="reset_saw">
+												<i class="fa fa-trash"></i>
+												Reset
+										</button><br>
 										<table id="add-row" class="display table table-striped table-hover table-head-bg-primary mt-4" >
 											<thead>
 												<tr>
@@ -505,6 +509,8 @@
 					tampil_data();
 					function tampil_data(){
 		            $.ajax({
+		            	processing: true,
+               			serverSide: true,
 		                type  : 'GET',
 		                url   : '<?php echo base_url()?>/Saw/show_saw_normalisasi',
 		                async : true,
@@ -715,52 +721,82 @@
 			            return false;
 			        });
 			        //GET UPDATE Pass
-			        $('#show_data').on('click','.item_edit_pass',function(){
-			            var id=$(this).attr('data');
-			            $.ajax({
-			                type : "GET",
-			                url  : "<?php echo base_url('/user/get_user')?>",
-			                dataType : "JSON",
-			                data : {id:id},
-			                success: function(data){
-			                    $.each(data,function(id, menu){
-			                        $('#editPassRowModal').modal('show');
-			                        $('[name="editPassId"]').val(data.id);
-			                    });
-			                }
-			            });
-			            return false;
-			        });
+			        // $('#show_data').on('click','.item_edit_pass',function(){
+			        //     var id=$(this).attr('data');
+			        //     $.ajax({
+			        //         type : "GET",
+			        //         url  : "<?php //echo base_url('/user/get_user')?>",
+			        //         dataType : "JSON",
+			        //         data : {id:id},
+			        //         success: function(data){
+			        //             $.each(data,function(id, menu){
+			        //                 $('#editPassRowModal').modal('show');
+			        //                 $('[name="editPassId"]').val(data.id);
+			        //             });
+			        //         }
+			        //     });
+			        //     return false;
+			        // });
 			        //Update Password
-			        $('#editPassRowButton').on('click',function(){
-			            var id = $('#editPassId').val();
-			            var pass = $('#editPass').val();
-			            $.ajax({
-			                type : "POST",
-			                url  : "<?php echo base_url('/user/update_password')?>",
-			                dataType : "JSON",
-			                data : {id:id , pass:pass},
-			                success: function(data){
-			                    $('[name="editId"]').val("");
-			                    $('[name="editPass"]').val("");
-			                    $('#editPassRowModal').modal('hide');
-			                    tampil_data();
-			                    $.notify({
-									icon: 'flaticon-add-user',
-									title: 'Success',
-									message: 'Berhasil mengganti password!',
-								},{
-									type: 'info',
-									placement: {
-										from: "top",
-										align: "right"
-									},
-									time: 1000,
-								});
-			                }
+			     //    $('#editPassRowButton').on('click',function(){
+			     //        var id = $('#editPassId').val();
+			     //        var pass = $('#editPass').val();
+			     //        $.ajax({
+			     //            type : "POST",
+			     //            url  : "<?php //echo base_url('/user/update_password')?>",
+			     //            dataType : "JSON",
+			     //            data : {id:id , pass:pass},
+			     //            success: function(data){
+			     //                $('[name="editId"]').val("");
+			     //                $('[name="editPass"]').val("");
+			     //                $('#editPassRowModal').modal('hide');
+			     //                tampil_data();
+			     //                $.notify({
+								// 	icon: 'flaticon-add-user',
+								// 	title: 'Success',
+								// 	message: 'Berhasil mengganti password!',
+								// },{
+								// 	type: 'info',
+								// 	placement: {
+								// 		from: "top",
+								// 		align: "right"
+								// 	},
+								// 	time: 1000,
+								// });
+			     //            }
+			     //        });
+			     //        return false;
+			     //    });
+			        // Reset saw
+			        $('#reset_saw').on('click',function(){
+			          swal({
+			              title: "Kamu Yakin?",
+			              text: "Data akan direset.",
+			              icon: "warning",
+			              buttons: true,
+			              dangerMode: true,
+			            })
+			            .then((willDelete) => {
+			              if (willDelete) {
+			                  $.ajax({
+			                      url : "<?php echo base_url(); ?>/saw/reset_data",
+			                      method :"POST",
+			                      // data : {id:id},
+			                      success : function(data){
+			                          
+			                          swal("Data berhasil dihapus!", {
+			                          icon: "success",
+			                          });
+			                              tampil_data();
+			                      },
+			            
+			                    })
+			                  
+			              } else {
+			                swal("Reset dibatalkan!");
+			              }
 			            });
-			            return false;
-			        });
+			            });
 
 				});
 			</script>

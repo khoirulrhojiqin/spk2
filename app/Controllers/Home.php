@@ -31,4 +31,10 @@ class Home extends BaseController
 		
 		return view('page/metode_pm');
 	}
+
+	public function hasil()
+	{	
+		
+		return view('page/hasil_pengujian');
+	}
 }

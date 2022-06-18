@@ -172,7 +172,39 @@ class Saw extends BaseController
         echo json_encode($hasil);
     }
     
+    function reset_data(){
+      $db = \Config\Database::connect();  
+      $tmp = $db->table('m_saw_normalisasi');
+      $tmp->truncate();
 
+    }
+
+    function simpan_data(){
+      $ad_k1 = 0.12; $ad_k2 = 0.11; $ad_k3 = 0.07; 
+      $komp_k1 = 0.15; $komp_k2 = 0.08; $komp_k3 = 0.05; 
+      $meng_k1 = 0.1; $meng_k2 = 0.07; $meng_k3 = 0.10; $meng_k4 = 0.06;
+      $wan_k1 = 0.06; $wan_k2 = 0.03;
+                  
+      $db = \Config\Database::connect();  
+      $tmp = $db->table('m_saw_rank');
+
+      $data_kriteria = new M_saw();
+      $get = $data_kriteria->getNormalisasi();
+
+      foreach ($get->getResult() as $row) {
+      $hsl = (($ad_k1*$row->k1)+($ad_k2*$row->k2)+($ad_k3*$row->k3)+($komp_k1*$row->k4)+($komp_k2*$row->k5)+($komp_k3*$row->k6)+($meng_k1*$row->k7)+($meng_k2*$row->k8)+($meng_k3*$row->k9)+($meng_k4*$row->k10)+($wan_k1*$row->k11)+($wan_k2*$row->k12));
+      $h = (round($hsl,2)*100).'%';
+
+        // Insert rank
+        $dx = array(
+           'nama' => $row->alternatif,
+           'rank' => $h
+         );
+        $result_set = $tmp->insert($dx);
+       // End insert
+      }
+
+    }
    
     
 

@@ -1,0 +1,117 @@
+CRITICAL - 2022-06-18 05:34:20 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 90, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->selisih_pm_gap()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:22 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(253): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 253, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_cf_sf()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:22 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(294): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 294, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_cf_sf_hasil()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:25 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(332): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 332, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_akhir()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:25 --> Undefined variable: tertinggi
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(377): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 377, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:25 --> Undefined variable: tertinggi
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(377): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 377, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:28 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(253): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 253, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_cf_sf()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:28 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(294): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 294, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_cf_sf_hasil()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 05:34:29 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 90, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->selisih_pm_gap()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-18 06:25:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1
+CRITICAL - 2022-06-18 06:25:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `m_...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `m_...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `m_...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `m_...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_pm.php(109): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\spk2\app\Controllers\Pm.php(375): App\Models\M_pm->insertRank(Array)
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-18 06:25:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1
+CRITICAL - 2022-06-18 06:25:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `m_...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `m_...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `m_...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `m_...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_pm.php(109): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\spk2\app\Controllers\Pm.php(375): App\Models\M_pm->insertRank(Array)
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-18 06:30:20 --> Undefined variable: ad_tot
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(425): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 425, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_nilai_perangkingan2()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 07:18:13 --> Undefined variable: ad_k1
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 190, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_data()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 07:18:18 --> Undefined variable: ad_k1
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 190, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_data()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 07:18:29 --> Undefined variable: ad_k1
+#0 C:\laragon\www\spk2\app\Controllers\Saw.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 190, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Saw->simpan_data()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saw))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

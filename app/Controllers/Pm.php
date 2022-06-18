@@ -336,9 +336,9 @@ class Pm extends BaseController
     }
 
     public function get_nilai_perangkingan(){
-    $db = \Config\Database::connect();  
-    $tmp = $db->table('m_pm_rank');
-    $tmp->truncate();
+    // $db = \Config\Database::connect();  
+    // $tmp = $db->table('m_pm_rank');
+    // $tmp->truncate();
 
     $nilai_akhir = new M_pm();
     $get = $nilai_akhir->getNilai_akhir();
@@ -361,15 +361,15 @@ class Pm extends BaseController
         $tot_max
       );
       // Insert temp
-      $dx = array(
-          'nama'          => $d->alternatif,
-          'n_administrasi'=> $ad_tot,
-          'n_kompetensi'  => $ko_tot,
-          'n_mengajar'    => $me_tot,
-          'n_wawancara'   => $wa_tot,
-          'n_akhir'       => $tot_max
-       );
-       $nilai_akhir->insertRank($dx);
+      // $dx = array(
+      //     'nama'          => $d->alternatif,
+      //     'n_administrasi'=> $ad_tot,
+      //     'n_kompetensi'  => $ko_tot,
+      //     'n_mengajar'    => $me_tot,
+      //     'n_wawancara'   => $wa_tot,
+      //     'n_akhir'       => $tot_max
+      //  );
+      //  $nilai_akhir->insertRank($dx);
        // End insert
 
     }
@@ -412,6 +412,48 @@ class Pm extends BaseController
      //        "nilai" => $numbers);
     echo json_encode($output);
      // var_dump($output);
+
+    }
+
+    function reset_data(){
+      $db = \Config\Database::connect();  
+      $tmp = $db->table('m_pm_alternatif');
+      $tmp->truncate();
+
+    }
+
+    function simpan_data(){
+      $nilai_akhir = new M_pm();
+      $get = $nilai_akhir->getNilai_akhir();
+      foreach ($get->getResult() as $d) {
+          $ad_tot= number_format((float)($d->administrasi_cf*(20/100))+($d->administrasi_sf*(10/100)), 2, '.', '');
+          $ko_tot= number_format((float)($d->kompetensi_cf*(20/100))+($d->kompetensi_sf*(8/100)), 2, '.', '');
+          $me_tot= number_format((float)($d->mengajar_cf*(20/100))+($d->mengajar_sf*(13/100)), 2, '.', '');
+          $wa_tot= number_format((float)($d->wawancara_cf*(5/100))+($d->wawancara_sf*(4/100)), 2, '.', '');
+          $tot_max = number_format((float)($ad_tot*(30/100))+($ko_tot*(28/100))+($me_tot*(33/100))+($wa_tot*(9/100)), 2, '.', '');
+
+        // $tertinggi[] = $tot_max.$d->alternatif;
+        $data[] = array(
+          $d->alternatif, 
+          $ad_tot,
+          $ko_tot,
+          $me_tot,
+          $wa_tot,
+          $tot_max
+        );
+        // Insert rank
+        $dx = array(
+            'nama'          => $d->alternatif,
+            'n_administrasi'=> $ad_tot,
+            'n_kompetensi'  => $ko_tot,
+            'n_mengajar'    => $me_tot,
+            'n_wawancara'   => $wa_tot,
+            'n_akhir'       => $tot_max
+         );
+         $nilai_akhir->insertRank($dx);
+       // End insert
+
+    }
 
     }
     

@@ -35,7 +35,11 @@
 											<a href="<?=base_url('/saw/index')?>" type="button" class="btn btn-primary ml-auto">
 												<i class="fas fa-angle-double-left"></i>
 												Kembali
-											</a>
+											</a>&nbsp;
+											<button class="btn btn-success" id="simpan_data">
+												<i class="fas fa-save"></i>
+												Save Rank
+											</button>
 										<!-- </div> -->
 									</div>
 									<!-- <div class="d-flex align-items-center">
@@ -102,21 +106,6 @@
 								</div>
 								<div class="card-body">
 									<?php
-									// $k1=0; $k2=0; $k3=0; $k4=0; $k5=0; $k6=0; $k7=0; $k8=0; $k9=0; $k10=0; $k11=0; $k12=0; 
-									// foreach ($get_nilai->getResult() as $nilai) {
-									// 	$k1 += $nilai->k1;
-									// 	$k2 += $nilai->k2;
-									// 	$k3 += $nilai->k3;
-									// 	$k4 += $nilai->k4;
-									// 	$k5 += $nilai->k5;
-									// 	$k6 += $nilai->k6;
-									// 	$k7 += $nilai->k7;
-									// 	$k8 += $nilai->k8;
-									// 	$k9 += $nilai->k9;
-									// 	$k10 += $nilai->k10;
-									// 	$k11 += $nilai->k11;
-									// 	$k12 += $nilai->k12;
-									// }
 
 									$ad_k1 = 0.12; $ad_k2 = 0.11; $ad_k3 = 0.07; 
 									$komp_k1 = 0.15; $komp_k2 = 0.08; $komp_k3 = 0.05; 
@@ -135,9 +124,9 @@
 											</thead>
 											<tbody >
 												<?php 
-												$db = \Config\Database::connect();  
-											    $tmp = $db->table('m_saw_rank');
-											    $tmp->truncate(); 
+												// $db = \Config\Database::connect();  
+											 //    $tmp = $db->table('m_saw_rank');
+											 //    $tmp->truncate(); 
 
 												$i=1; foreach($get_saw->getResult() as $row): 
 												$hsl = (($ad_k1*$row->k1)+($ad_k2*$row->k2)+($ad_k3*$row->k3)+($komp_k1*$row->k4)+($komp_k2*$row->k5)+($komp_k3*$row->k6)+($meng_k1*$row->k7)+($meng_k2*$row->k8)+($meng_k3*$row->k9)+($meng_k4*$row->k10)+($wan_k1*$row->k11)+($wan_k2*$row->k12));
@@ -146,11 +135,11 @@
 												$tertinggi[] = $hsl.$row->alternatif;
 
 												// Insert rank
-											      $dx = array(
-											         'nama' => $row->alternatif,
-											         'rank' => $h
-											       );
-											       $result_set = $tmp->insert($dx);
+											      // $dx = array(
+											      //    'nama' => $row->alternatif,
+											      //    'rank' => $h
+											      //  );
+											      //  $result_set = $tmp->insert($dx);
 
 											      // End insert
 												?>
@@ -238,6 +227,39 @@
 			</div>
 			<script src="<?php echo site_url('assets/js/core/jquery.3.2.1.min.js')?>"></script>
 			<script src="<?php echo site_url('assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')?>"></script>
-			
+			<script type="text/javascript">
+				$(document).ready(function(){
+					 $('#simpan_data').on('click',function(){
+			          swal({
+			              title: "Simpan Data ?",
+			              // text: "Simpan Data ?",
+			              icon: "info",
+			              buttons: true,
+			              dangerMode: false,
+			            })
+			            .then((willSave) => {
+			              if (willSave) {
+			                  $.ajax({
+			                      url : "<?php echo base_url(); ?>/saw/simpan_data",
+			                      method :"POST",
+			                      // data : {id:id},
+			                      success : function(data){
+			                          
+			                          swal("Data berhasil disimpan!", {
+			                          icon: "success",
+			                          });
+			                              // tampil_data();
+			                      },
+			            
+			                    })
+			                  
+			              } else {
+			                swal("Simpan dibatalkan!");
+			              }
+			            });
+			            });
+
+				});
+			</script>
 
 <?= $this->endSection() ?>

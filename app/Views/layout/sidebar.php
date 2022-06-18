@@ -53,7 +53,7 @@
 											<span class="sub-item">Berkas Mahasiswa</span>
 										</a>
 									</li>
-									<?php } ?>
+									
 									<!-- <li>
 										<a href="../demo2/index.html">
 											<span class="sub-item">Data 2</span>
@@ -79,6 +79,14 @@
 											</ul>
 										</div>
 									</li>
+									<?php } ?>
+									<?php if (session()->get('role_id')!="1") { ?>
+									<li>
+										<a href="<?=base_url('/home/hasil')?>">
+											<span class="sub-item">Hasil Pengujian</span>
+										</a>
+									</li>
+									<?php } ?>
 								</ul>
 							</div>
 						</li>
@@ -141,7 +149,7 @@
 						</li>
 						<?php 
 						$role = session()->get('role_id');
-						if ($role!='3') { ?>
+						if ($role=='1') { ?>
 						
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#base">
