@@ -387,9 +387,9 @@ class Pm extends BaseController
 
             $n_max1 = preg_replace('/[^0-9.]/', '', $max_1);
             $n_max2 = preg_replace('/[^0-9.]/', '', $max_2);
-            if ($n_max1 == $n_max2) {
-              $numbers = preg_replace('/[^0-9.]/', '', $max_1.''.$max_2);
-              $letters = preg_replace('/[^a-zA-Z ]/', '', $max_1.' dan '.$max_2);
+            if ($n_max1 == $n_max2 || $n_max1 > $n_max2) {
+              $numbers = preg_replace('/[^0-9. | ]/', '', $max_1.' | '.$max_2);
+              $letters = preg_replace('/[^a-zA-Z &]/', '', $max_1.' & '.$max_2);
             }else{
               $numbers = preg_replace('/[^0-9.]/', '', $str);
               $letters = preg_replace('/[^a-zA-Z ]/', '', $str);
@@ -455,6 +455,19 @@ class Pm extends BaseController
 
     }
 
+    }
+
+    function get_mahasiswa(){
+      $mahasiswa = new M_pm();
+      // $get = $mahasiswa->getNilai_akhir();
+        if (isset($_GET['term'])) {
+            $result = $mahasiswa->search_mahasiswa($_GET['term']);
+            // if (count($result) > 0) {
+            foreach ($result->getResult() as $row)
+                $arr_result[] = $row->nama;
+                echo json_encode($arr_result);
+            // }
+        }
     }
     
 

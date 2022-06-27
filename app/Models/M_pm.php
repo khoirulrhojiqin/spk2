@@ -44,6 +44,18 @@ class M_pm extends Model
     //     return $query;
 
     // }
+    public function search_mahasiswa($title){
+        $db = \Config\Database::connect();
+        $builder = $db->table('m_user');
+
+        $builder->select('*');
+        $builder->like('nama', $title, 'both');
+        $builder->orderBy('nama', 'ASC');
+        $builder->where('role', 'mahasiswa');
+        $builder->limit(10);
+        $r = $builder->get();
+        return $r;
+    }
 
     public function getSelisih()
     {   

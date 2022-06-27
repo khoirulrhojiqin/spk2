@@ -26,6 +26,73 @@
 					</div>
 					<div class="row">
 
+						<div class="card-body">
+									<div class="col-sm-6 col-md-6">
+										<div class="card card-stats card-success card-round">
+											<div class="card-body ">
+												<div class="row">
+													<div class="col-5">
+														<div class="icon-big text-center">
+															<i class="flaticon-success"></i>
+														</div>
+													</div>
+													<div class="col-7 col-stats">
+														<div class="numbers">
+															<?php 
+															$ad_k1 = 0.12; $ad_k2 = 0.11; $ad_k3 = 0.07; 
+															$komp_k1 = 0.15; $komp_k2 = 0.08; $komp_k3 = 0.05; 
+															$meng_k1 = 0.1; $meng_k2 = 0.07; $meng_k3 = 0.10; $meng_k4 = 0.06;
+															$wan_k1 = 0.06; $wan_k2 = 0.03;  
+
+															$i=1; foreach($get_saw->getResult() as $row){ 
+															$hsl = (($ad_k1*$row->k1)+($ad_k2*$row->k2)+($ad_k3*$row->k3)+($komp_k1*$row->k4)+($komp_k2*$row->k5)+($komp_k3*$row->k6)+($meng_k1*$row->k7)+($meng_k2*$row->k8)+($meng_k3*$row->k9)+($meng_k4*$row->k10)+($wan_k1*$row->k11)+($wan_k2*$row->k12));
+															$h = (round($hsl,2)*100).'%';
+															
+															$tertinggi[] = $hsl.$row->alternatif;
+															
+															}?>
+
+															<?php 
+															$str = max($tertinggi); 
+																
+																$max_1 = $max_2 = 0;
+																for ($i=0; $i<count($tertinggi); $i++) {
+																    if ($tertinggi[$i] > $max_1) {
+																      $max_2 = $max_1;
+																      $max_1 = $tertinggi[$i];
+																    } else if ($tertinggi[$i] > $max_2 && $tertinggi[$i] != $max_2) {
+																      $max_2 = $tertinggi[$i];
+																    }
+																}
+
+																$n_max1 = preg_replace('/[^0-9.]/', '', $max_1);
+																$n_max2 = preg_replace('/[^0-9.]/', '', $max_2);
+																if ($n_max1 == $n_max2 || $n_max1 > $n_max2) {
+																	$numbers = preg_replace('/[^0-9. | ]/', '', $max_1.'|'.$max_2);
+																	$letters = preg_replace('/[^a-zA-Z &]/', '', $max_1.' & '.$max_2);
+																}else{
+																	$numbers = preg_replace('/[^0-9.]/', '', $str);
+																	$letters = preg_replace('/[^a-zA-Z ]/', '', $str);
+																}
+																
+															 ?>
+															<p class="card-category"><?=$letters?></p>
+															<h4 class="card-title">
+															<?php
+																 $n = explode('|', $numbers);
+																 $n2= ((float)$n[0]*100).' | '.((float)$n[1]*100);
+																 echo $n2;
+															?>	
+															</h4>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
@@ -105,14 +172,6 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<?php
-
-									$ad_k1 = 0.12; $ad_k2 = 0.11; $ad_k3 = 0.07; 
-									$komp_k1 = 0.15; $komp_k2 = 0.08; $komp_k3 = 0.05; 
-									$meng_k1 = 0.1; $meng_k2 = 0.07; $meng_k3 = 0.10; $meng_k4 = 0.06;
-									$wan_k1 = 0.06; $wan_k2 = 0.03;  
-
-									?>
 									<div class="table-responsive">
 										<table id="add-row" class="display table table-striped table-hover table-head-bg-success mt-4" >
 											<thead>
@@ -124,24 +183,12 @@
 											</thead>
 											<tbody >
 												<?php 
-												// $db = \Config\Database::connect();  
-											 //    $tmp = $db->table('m_saw_rank');
-											 //    $tmp->truncate(); 
-
+										
 												$i=1; foreach($get_saw->getResult() as $row): 
 												$hsl = (($ad_k1*$row->k1)+($ad_k2*$row->k2)+($ad_k3*$row->k3)+($komp_k1*$row->k4)+($komp_k2*$row->k5)+($komp_k3*$row->k6)+($meng_k1*$row->k7)+($meng_k2*$row->k8)+($meng_k3*$row->k9)+($meng_k4*$row->k10)+($wan_k1*$row->k11)+($wan_k2*$row->k12));
-												$h = (round($hsl,2)*100).'%';
+												$h = (round($hsl,3)*100).'%';
 												
-												$tertinggi[] = $hsl.$row->alternatif;
-
-												// Insert rank
-											      // $dx = array(
-											      //    'nama' => $row->alternatif,
-											      //    'rank' => $h
-											      //  );
-											      //  $result_set = $tmp->insert($dx);
-
-											      // End insert
+												// $tertinggi[] = $hsl.$row->alternatif;
 												?>
 												<tr>
 													<td><?php echo$i++?></td>
@@ -149,77 +196,12 @@
 					                                <td><?php echo $h;?></td>
 												</tr>
 												<?php endforeach; ?>
-
-												<?php 
-												// $this->session = \Config\Services::session();
-												// $this->session->set('r',$b);
-												// $s_max = $this->session->get("r");
-												?> 
 											</tbody>
 										</table>
 									</div>
 								</div>
 							</div>
 						</div>
-
-						<!-- <div class="col-md-12">
-							<div class="card"> -->
-								<!-- <div class="card-header">
-									<div class="d-flex align-items-center">
-										<h4 class="card-title">Kesimpulan</h4>
-									</div>
-								</div> -->
-								<div class="card-body">
-									<div class="col-sm-6 col-md-6">
-										<div class="card card-stats card-success card-round">
-											<div class="card-body ">
-												<div class="row">
-													<div class="col-5">
-														<div class="icon-big text-center">
-															<i class="flaticon-success"></i>
-														</div>
-													</div>
-													<div class="col-7 col-stats">
-														<div class="numbers">
-															<?php $str = max($tertinggi); 
-																// $numbers = preg_replace('/[^0-9.]/', '', $str);
-																// $letters = preg_replace('/[^a-zA-Z ]/', '', $str);
-
-																// print_r($tertinggi);
-
-																$max_1 = $max_2 = 0;
-																for ($i=0; $i<count($tertinggi); $i++) {
-																    if ($tertinggi[$i] > $max_1) {
-																      $max_2 = $max_1;
-																      $max_1 = $tertinggi[$i];
-																    } else if ($tertinggi[$i] > $max_2 && $tertinggi[$i] != $max_2) {
-																      $max_2 = $tertinggi[$i];
-																    }
-																}
-
-																$n_max1 = preg_replace('/[^0-9.]/', '', $max_1);
-																$n_max2 = preg_replace('/[^0-9.]/', '', $max_2);
-																if ($n_max1 == $n_max2) {
-																	$numbers = preg_replace('/[^0-9.]/', '', $max_1.''.$max_2);
-																	$letters = preg_replace('/[^a-zA-Z ]/', '', $max_1.' dan '.$max_2);
-																}else{
-																	$numbers = preg_replace('/[^0-9.]/', '', $str);
-																	$letters = preg_replace('/[^a-zA-Z ]/', '', $str);
-																}
-																
-															 ?>
-															<p class="card-category"><?=$letters?></p>
-															<h4 class="card-title"><?=(round($numbers,2)*100).'%'?></h4>
-															
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-						<!-- 	</div>
-						</div> -->
 
 
 					</div>

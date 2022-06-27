@@ -29,13 +29,36 @@
 					</div>
 					<div class="row">
 
+						<div class="card-body">
+							<div class="col-sm-6 col-md-6">
+								<div class="card card-stats card-success card-round">
+									<div class="card-body ">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="flaticon-success"></i>
+												</div>
+											</div>
+											<div class="col-7 col-stats">
+												<div class="numbers">
+													
+													<p class="card-category" id="huruf"></p>
+													<h4 class="card-title" id="angka"></h4>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
 									<div class="d-flex align-items-center">
 										<h4 class="card-title">Nilai Akhir</h4>
-										<!-- <div class="btn btn-group"> -->
-											<a href="<?=base_url('/pm/cf_sf')?>" type="button" class="btn btn-primary ml-auto">
+										<a href="<?=base_url('/pm/cf_sf')?>" type="button" class="btn btn-primary ml-auto">
 												<i class="fas fa-angle-double-left"></i>
 												Kembali
 											</a>&nbsp;
@@ -43,15 +66,8 @@
 												<i class="fas fa-save"></i>
 												Save Rank
 											</button>
-										<!-- </div> -->
+										
 									</div>
-									<!-- <div class="d-flex align-items-center">
-										<h4 class="card-title">Hitung Hasil</h4>
-										<a href="" type="button" class="btn btn-primary btn-round ml-auto">
-											<i class="fa fa-plus"></i>
-											Hitung Hasil
-										</a>
-									</div> -->
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
@@ -141,29 +157,7 @@
 								
 							</div>
 						</div> -->
-						<div class="card-body">
-									<div class="col-sm-6 col-md-6">
-										<div class="card card-stats card-success card-round">
-											<div class="card-body ">
-												<div class="row">
-													<div class="col-5">
-														<div class="icon-big text-center">
-															<i class="flaticon-success"></i>
-														</div>
-													</div>
-													<div class="col-7 col-stats">
-														<div class="numbers">
-															
-															<p class="card-category" id="huruf"></p>
-															<h4 class="card-title" id="angka"></h4>
-															
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+						
 
 
 					</div>

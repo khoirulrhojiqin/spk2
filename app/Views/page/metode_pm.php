@@ -1,5 +1,72 @@
 <?= $this->extend('layout/index') ?>
 <?= $this->section('content') ?>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<style type="text/css">
+	.ui-autocomplete-input {
+  /*border: none; */
+  /*font-size: 14px;*/
+  /*width: 300px;*/
+  /*height: 24px;*/
+  /*margin-bottom: 5px;*/
+  /*padding-top: 2px;
+  border: 1px solid #DDD !important;
+  padding-top: 0px !important;*/
+  z-index: 1511;
+  position: relative;
+}
+.ui-menu .ui-menu-item a {
+  font-size: 12px;
+}
+.ui-autocomplete {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  z-index: 1051 !important;
+  float: left;
+  display: none;
+  min-width: 160px;
+  width: 160px;
+  padding: 4px 0;
+  margin: 2px 0 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+}
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.ui-state-hover, .ui-state-active {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #0088cc;
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      background-image: none;
+}
+
+</style>
 			<div class="content">
 				<div class="page-inner">
 					<div class="page-header">
@@ -95,11 +162,11 @@
 																	<label>Nilai Matkul (K02)</label>
 																		<select name="addMatkul" id="addMatkul" class="form-control" required>
 							                                                <option >-Pilih-</option>
-							                                                <option value="5">A</option>
+							                                                <!-- <option value="5">A</option>
 							                                                <option value="4">A-</option>
 							                                                <option value="3">B</option>
 							                                                <option value="2">B-</option>
-							                                                <option value="1">C</option>
+							                                                <option value="1">C</option> -->
 							                                             </select>
 																</div>
 															</div>
@@ -508,8 +575,50 @@
 					</div>
 				</div>
 			</div>
+			
+			<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+			
 			<script src="<?php echo site_url('assets/js/core/jquery.3.2.1.min.js')?>"></script>
+			<!-- <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" ></script> -->
+			<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
 			<script src="<?php echo site_url('assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')?>"></script>
+			<script src="<?php //echo base_url('assets/js/index.js')?>"></script>
+			
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#addName").autocomplete({
+			              source: "<?php echo base_url('/pm/get_mahasiswa/?');?>"
+			            });
+				});
+
+				let result = document.getElementById('addMatkul')
+				let select = document.getElementById('addIpk')
+			
+				function load(nilai){
+					// for(i=0; i< nilai; i++){
+						if ($('#addIpk').val()=='5') {
+							result.innerHTML += "<option value='5'>A</option>"
+						}else if ($('#addIpk').val()=='4'){
+							result.innerHTML += "<option value='4'>A-</option>"
+						}else if ($('#addIpk').val()=='3'){
+							result.innerHTML += "<option value='3'>B</option>"
+						}else if ($('#addIpk').val()=='2'){
+							result.innerHTML += "<option value='2'>B-</option>"
+						}else if ($('#addIpk').val()=='1'){
+							result.innerHTML += "<option value='1'>C</option>"
+						}else{
+							
+						}
+						
+					// }
+				}
+				
+				select.addEventListener('change', function(){
+					let nilai = select.value
+					result.innerHTML = ""
+					load(nilai)
+				})
+			</script>
 			<script type="text/javascript">
 				$(document).ready(function() {
 					tampil_data();
