@@ -365,11 +365,11 @@
 																	<label>Nilai Matkul (K02)</label>
 																		<select name="editMatkul" id="editMatkul" class="form-control" required>
 							                                                <option >-Pilih-</option>
-							                                                <option value="5">A</option>
-							                                                <option value="4">A-</option>
-							                                                <option value="3">B</option>
-							                                                <option value="2">B-</option>
-							                                                <option value="1">C</option>
+							                                                <option value="5">A+</option>
+							                                                <option value="4">A</option>
+							                                                <option value="3">A-</option>
+							                                                <option value="2">B+</option>
+							                                                <option value="1">B</option>
 							                                             </select>
 																</div>
 															</div>
