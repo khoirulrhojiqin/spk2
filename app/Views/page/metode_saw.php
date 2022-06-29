@@ -103,10 +103,11 @@
 												<i class="fa fa-plus"></i>
 												Add Alternatif
 											</button>&nbsp;
-											<a href="<?=base_url('/saw/result_saw')?>" type="button" class="btn btn-success">
+											<div id="btn_next"> </div>
+											<!-- <a href="<?php //echo base_url('/saw/result_saw')?>" type="button" class="btn btn-success">
 												<i class="fas fa-angle-double-right"></i>
 												Hitung Hasil
-											</a>
+											</a> -->
 										<!-- </div> -->
 									</div>
 									<!-- <div class="d-flex align-items-center">
@@ -655,6 +656,7 @@
 		                dataType : 'json',
 		                success : function(data){
 		                    var html = '';
+		                    var html2 = '';
 		                    var i;
 		                    for(i=0; i<data.length; i++){
 		                    // var link = '<?php //echo base_url()?>menu/menu/roleAccess/'+data[i].id;
@@ -680,8 +682,14 @@
 		                                    '<a href="javascript:;" data-toggle="tooltip" class="btn btn-link btn-danger btn-xs item_hapus" data-original-title="Remove" data="'+data[i].id_normalisasi+'"><i class="fa fa-times"></i></a></div>'+
 		                                '</td>'+
 		                                '</tr>';
+		                          
 		                    }
+		                    if (data.length>0) {
+		                    	html2 += '<a href="<?php echo base_url('/saw/result_saw')?>" type="button" class="btn btn-success"><i class="fas fa-angle-double-right"></i>Hitung Hasil</a>';
+		                    }
+		                    
 		                    $('#show_data').html(html);
+		                    $('#btn_next').html(html2);
 		                    $('#add-row').dataTable({
 		                        "searching": false,
 		                        "paging":   false,
@@ -710,7 +718,6 @@
 		            var komitmen=$('#addKomitmen').val();
 		            var konsisten=$('#addKonsisten').val();
 		            var karakter=$('#addKarakter').val();
-		            
 		            $.ajax({
 		                type : "POST",
 		                url  : "<?php echo base_url('/saw/simpan_kriteria')?>",

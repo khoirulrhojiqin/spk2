@@ -10,13 +10,14 @@ class M_saw extends Model
     protected $primaryKey = 'id_normalisasi';
 
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['id_normalisasi','alternatif', 'k1', 'k2', 'k3', 'k4', 'k5', 'k6', 'k7', 'k8', 'k9', 'k10', 'k11', 'k12'];
+    protected $allowedFields = ['id_normalisasi','alternatif','id_user', 'k1', 'k2', 'k3', 'k4', 'k5', 'k6', 'k7', 'k8', 'k9', 'k10', 'k11', 'k12'];
 
     public function getResult_saw()
     {	
     	$db = \Config\Database::connect();
-    	// $id = session()->get('id');
-    	$query = $db->table('m_saw_normalisasi')->get();
+    	$id = session()->get('id');
+        // $id_user = '5';
+    	$query = $db->table('m_saw_normalisasi')->getWhere('id_user',$id);
     	return $query;
 
     }
@@ -48,6 +49,7 @@ class M_saw extends Model
     public function getNormalisasi()
     {   
         $db = \Config\Database::connect();
+        $id_user = session()->get('id');
         $query = $db->query("
             SELECT 
             alternatif,
@@ -63,7 +65,7 @@ class M_saw extends Model
             k10/(SELECT MAX(k10)FROM m_saw_normalisasi) AS k10,
             (SELECT MIN(k11)FROM m_saw_normalisasi)/k11 AS k11,
             (SELECT MIN(k12)FROM m_saw_normalisasi)/k12 AS k12
-            FROM m_saw_normalisasi;
+            FROM m_saw_normalisasi where id_user='$id_user';
             ");
         return $query;
 

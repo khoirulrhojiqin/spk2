@@ -36,6 +36,7 @@
 													<th>#</th>
 					                                <th>NIM</th>
 					                                <th>Nama</th>
+					                                <th>Prodi</th>
 					                                <th>Transkrip</th>
 					                                <th>Sertifikat</th>
 													<th style="width: 10%">Action</th>
@@ -71,6 +72,7 @@
 		                                '<td>'+(i+1)+'</td>'+
 		                                '<td>'+data[i].nip_nim+'</td>'+
 		                                '<td>'+data[i].nama+'</td>'+
+		                                '<td>'+data[i].prodi+'</td>'+
 		                                '<td>'+data[i].transkrip+'</td>'+
 		                                '<td>'+data[i].sertifikat+'</td>'+
 		                                '<td>'+

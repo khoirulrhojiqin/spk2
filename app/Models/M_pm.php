@@ -10,7 +10,7 @@ class M_pm extends Model
     protected $primaryKey = 'id_alternatif';
 
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['id_alternatif','alternatif', 'k1', 'k2', 'k3', 'k4', 'k5', 'k6', 'k7', 'k8', 'k9', 'k10', 'k11', 'k12', 'ket'];
+    protected $allowedFields = ['id_alternatif','alternatif','id_user', 'k1', 'k2', 'k3', 'k4', 'k5', 'k6', 'k7', 'k8', 'k9', 'k10', 'k11', 'k12', 'ket'];
 
     public function getResult_saw()
     {	
@@ -59,6 +59,7 @@ class M_pm extends Model
 
     public function getSelisih()
     {   
+        $id = session()->get('id');
         $db = \Config\Database::connect();
         $query = $db->query("
             SELECT 
@@ -75,15 +76,16 @@ class M_pm extends Model
             k10-(SELECT bobot FROM m_pm_kriteria WHERE kode='K10') AS k10,
             k11-(SELECT bobot FROM m_pm_kriteria WHERE kode='K11') AS k11,
             k12-(SELECT bobot FROM m_pm_kriteria WHERE kode='K12') AS k12
-            FROM m_pm_alternatif;
+            FROM m_pm_alternatif where id_user='$id';
             ");
         return $query;
 
     }
 
     public function getCf_sf(){
+        $id = session()->get('id');
         $db = \Config\Database::connect();  
-        $get = $db->table('m_pm_gap_temporary')->get();
+        $get = $db->table('m_pm_gap_temporary')->where('id_user',$id)->get();
         return $get;
     }
 
@@ -109,8 +111,9 @@ class M_pm extends Model
     }
 
     public function getNilai_akhir(){
+        $id = session()->get('id');
         $db = \Config\Database::connect();  
-        $get = $db->table('m_pm_cf_sf_temporary')->get();
+        $get = $db->table('m_pm_cf_sf_temporary')->where('id_user',$id)->get();
         return $get;
     }
     

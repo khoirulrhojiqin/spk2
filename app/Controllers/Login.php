@@ -27,6 +27,7 @@ class Login extends BaseController
 	          'nama'=>$user->nama,
 	          'role'=>$user->role,
 	          'role_id'=>$user->role_id,
+	          'prodi'=>$user->prodi,
 	          'aktif'=>$user->aktif
 	        );
 	        $session->set($session_set);

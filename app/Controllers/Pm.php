@@ -31,12 +31,15 @@ class Pm extends BaseController
   public function selisih_pm_gap(){ 
     $temp_pm = new M_pm();
     $db = \Config\Database::connect();  
+    $id = session()->get('id');
     $tmp = $db->table('m_pm_gap_temporary');
-    $tmp->truncate(); 
+    $tmp->where('id_user', $id)->delete();
+    // $tmp->truncate(); 
 
     $data_kriteria = new M_pm();
     $get = $data_kriteria->getSelisih();
     $no=1;
+    $id_user = session()->get('id');
     foreach ($get->getResult() as $d) {
     // $selisih = array('0','1','-1','2','-2','3','-3','4','-4');
     if ($d->k1 == '0') { $k1 = 5; }else if ($d->k1 == '1') { $k1 = 4.5; }else if ($d->k1 == '-1') { $k1 = 4; }else if ($d->k1 == '2') { $k1 = 3.5; }else if ($d->k1 == '-2') { $k1 = 3; }else if ($d->k1 == '3') { $k1 = 2.5; }else if ($d->k1 == '-3') { $k1 = 2; }else if ($d->k1 == '4') { $k1 = 1.5; }else if ($d->k1 == '-4') { $k1 = 1; }
@@ -68,7 +71,8 @@ class Pm extends BaseController
        
       // Insert temp
       $dx = array(
-         'alternatif' => $d->alternatif,
+          'id_user' => $id_user,
+          'alternatif' => $d->alternatif,
           'k1' => $k1,
           'k2' => $k2,
           'k3' => $k3,
@@ -98,8 +102,9 @@ class Pm extends BaseController
   // }
 
    public function show_pm_kriteria(){
+     $id = session()->get('id');
      $data_kriteria = new M_pm();
-     $data = $data_kriteria->findAll();
+     $data = $data_kriteria->where('id_user', $id)->findAll();
      echo json_encode($data);
     }
    
@@ -109,6 +114,7 @@ class Pm extends BaseController
         $validation->setRules(['alternatif' => 'required']);
         $isDataValid = $validation->withRequest($this->request)->run();
 
+        $id_user = session()->get('id');
         $alternatif= $this->request->getPost('alternatif');
         $k1 = $this->request->getPost('k1');
         $k2 = $this->request->getPost('k2');
@@ -131,6 +137,7 @@ class Pm extends BaseController
         }else{
              if($isDataValid){
 	            $data = $data_kriteria->insert([
+                'id_user' => session()->get('id'),
                 'alternatif' => $this->request->getPost('alternatif'),
                 'k1' => $this->request->getPost('k1'),
                 'k2' => $this->request->getPost('k2'),
@@ -258,11 +265,14 @@ class Pm extends BaseController
 
     public function get_cf_sf_hasil(){
     $db = \Config\Database::connect();  
+    $id = session()->get('id');
     $tmp = $db->table('m_pm_cf_sf_temporary');
-    $tmp->truncate();
+    $tmp->where('id_user', $id)->delete();
+    // $tmp->truncate();
 
     $cf_sf = new M_pm();
     $get = $cf_sf->getCf_sf();
+    $id_user = session()->get('id');
     // $no=1;
     foreach ($get->getResult() as $d) {
         $ad_cf = round($d->k1+$d->k2/2,1);
@@ -277,7 +287,8 @@ class Pm extends BaseController
       $data[] = array($d->alternatif, $ad_cf,$ad_sf,$ko_cf,$ko_sf,$me_cf,$me_sf,$wa_cf,$wa_sf);
       // Insert temp
       $dx = array(
-         'alternatif' => $d->alternatif,
+          'id_user' => $id_user,
+          'alternatif' => $d->alternatif,
           'administrasi_cf' => $ad_cf,
           'administrasi_sf' => $ad_sf,
           'kompetensi_cf'   => $ko_cf,
@@ -443,6 +454,8 @@ class Pm extends BaseController
         );
         // Insert rank
         $dx = array(
+            'prodi' => session()->get('prodi'),
+            'id_user' => session()->get('id'),
             'nama'          => $d->alternatif,
             'n_administrasi'=> $ad_tot,
             'n_kompetensi'  => $ko_tot,

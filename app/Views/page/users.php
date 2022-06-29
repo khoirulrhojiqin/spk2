@@ -1,5 +1,37 @@
 <?= $this->extend('layout/index') ?>
 <?= $this->section('content') ?>
+<link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-ui.css')?>">
+<style type="text/css">
+.ui-autocomplete {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  z-index: 1051 !important;
+  float: left;
+  display: none;
+  min-width: 160px;
+  width: 160px;
+  padding: 4px 0;
+  margin: 2px 0 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+}
+</style>
 			<div class="content">
 				<div class="page-inner">
 					<div class="page-header">
@@ -83,6 +115,12 @@
 															</div>
 															<div class="col-sm-12">
 																<div class="form-group form-group-default">
+																	<label>Prodi</label>
+																	<input id="addProdi" name="addProdi" type="text" class="form-control" placeholder="prodi" required>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="form-group form-group-default">
 																	<label>Username</label>
 																	<input id="addUsername" name="addUsername" type="text" class="form-control" placeholder="username" required>
 																</div>
@@ -162,6 +200,12 @@
 															</div>
 															<div class="col-sm-12">
 																<div class="form-group form-group-default">
+																	<label>Prodi</label>
+																	<input id="editProdi" name="editProdi" type="text" class="form-control" placeholder="prodi" required>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="form-group form-group-default">
 																	<label>Username</label>
 																	<input id="editUsername" name="editUsername" type="text" class="form-control" placeholder="username" required>
 																</div>
@@ -221,6 +265,7 @@
 													<th>#</th>
 					                                <th>NIP / NIM</th>
 					                                <th>Nama</th>
+					                                <th>Prodi</th>
 					                                <th>Username</th>
 					                                <th>role</th>
 					                                <th>Status</th>
@@ -264,6 +309,14 @@
 			<script src="<?php echo site_url('assets/js/core/jquery.3.2.1.min.js')?>"></script>
 			<script src="<?php echo site_url('assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')?>"></script>
 			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#addProdi").autocomplete({
+			              source: "<?php echo base_url('/user/get_prodi/?');?>"
+			            });
+
+				});
+			</script>
+			<script type="text/javascript">
 				$(document).ready(function() {
 					tampil_data();
 					function tampil_data(){
@@ -281,6 +334,7 @@
 		                                '<td>'+(i+1)+'</td>'+
 		                                '<td>'+data[i].nip_nim+'</td>'+
 		                                '<td>'+data[i].nama+'</td>'+
+		                                '<td>'+data[i].prodi+'</td>'+
 		                                '<td>'+data[i].username+'</td>'+
 		                                '<td>'+data[i].role+'</td>'+
 		                                '<td>'+data[i].status+'</td>'+
@@ -329,6 +383,7 @@
 		            var name=$('#addName').val();
 		            var nip_nim=$('#addNip_nim').val();
 		            var role=$('#addRole').val();
+		            var prodi=$('#addProdi').val();
 		            var username=$('#addUsername').val();
 		            var password=$('#addPassword').val();
 		            
@@ -336,7 +391,7 @@
 		                type : "POST",
 		                url  : "<?php echo base_url('/user/simpan_user')?>",
 		                dataType : "JSON",
-		                data : {nama:name,nip_nim:nip_nim, username:username, password:password, role:role},
+		                data : {nama:name,nip_nim:nip_nim, prodi:prodi, username:username, password:password, role:role},
 		                success: function(data){
 		                	if (data=='gagal') {
 		                		$('#addRowModal').modal('hide');
@@ -353,7 +408,7 @@
 									time: 1000,
 								});
 		                	}else{
-		                		$('#addPassword').val("");$('#addName').val("");$('#addNip_nim').val("");$('#addUsername').val("");$('#addRole').val("");
+		                		$('#addPassword').val("");$('#addName').val("");$('#addProdi').val("");$('#addNip_nim').val("");$('#addUsername').val("");$('#addRole').val("");
 			                    $('#addRowModal').modal('hide');
 			                    tampil_data();
 			                    $.notify({
@@ -418,6 +473,7 @@
 			                        $('#editRowModal').modal('show');
 			                        $('[name="editId"]').val(data.id);
 			                        $('[name="editNip_nim"]').val(data.nip_nim);
+			                        $('[name="editProdi"]').val(data.prodi);
 			                        $('[name="editName"]').val(data.nama);
 			                        // $('[name="editRole"]').val(data.role);
 			                        $('[name="editRole"]').val(data.role_id).selected = 'selected';
@@ -433,17 +489,19 @@
 			            var id = $('#editId').val();
 			            var nip_nim = $('#editNip_nim').val();
 			            var name = $('#editName').val();
+			            var prodi = $('#editProdi').val();
 			            var role = $('#editRole').val();
 			            var username = $('#editUsername').val();
 			            $.ajax({
 			                type : "POST",
 			                url  : "<?php echo base_url('/user/update_user')?>",
 			                dataType : "JSON",
-			                data : {id:id ,nip_nim:nip_nim, name:name, username:username, role:role},
+			                data : {id:id ,nip_nim:nip_nim, name:name, prodi:prodi, username:username, role:role},
 			                success: function(data){
 			                    $('[name="editId"]').val("");
 			                    $('[name="editNip_nim"]').val("");
 			                    $('[name="editName"]').val("");
+			                    $('[name="editProdi"]').val("");
 			                    $('[name="editRole"]').val("");
 			                    $('[name="editUsername"]').val("");
 			                    $('#editRowModal').modal('hide');

@@ -14,15 +14,17 @@ class M_hasil extends Model
 
     public function getPm()
     {	
+        $prodi = session()->get('prodi');
     	$db = \Config\Database::connect();
-    	$query = $db->table('m_pm_rank')->get();
+    	$query = $db->table('m_pm_rank')->where('prodi',$prodi)->get();
     	return $query;
 
     }   
 
     public function getSaw(){
+        $prodi = session()->get('prodi');
         $db = \Config\Database::connect();  
-        $get = $db->table('m_saw_rank')->get();
+        $get = $db->table('m_saw_rank')->where('prodi',$prodi)->get();
         return $get;
     }
 

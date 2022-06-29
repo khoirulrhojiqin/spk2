@@ -103,10 +103,11 @@
 												<i class="fa fa-plus"></i>
 												Add Alternatif
 											</button>&nbsp;
-											<a href="<?=base_url('/pm/selisih_pm')?>" type="button" class="btn btn-success">
+											<!-- <a href="<?php //echo base_url('/pm/selisih_pm')?>" type="button" class="btn btn-success">
 												<i class="fas fa-angle-double-right"></i>
 												Selisih GAP
-											</a>
+											</a> -->
+											<div id="btn_next"></div>
 										<!-- </div> -->
 									</div>
 									<!-- <div class="d-flex align-items-center">
@@ -668,6 +669,7 @@
 		                dataType : 'json',
 		                success : function(data){
 		                    var html = '';
+		                    var html2 = '';
 		                    var i;
 		                    for(i=0; i<data.length; i++){
 		                    // var link = '<?php //echo base_url()?>menu/menu/roleAccess/'+data[i].id;
@@ -694,7 +696,11 @@
 		                                '</td>'+
 		                                '</tr>';
 		                    }
+		                    if (data.length>0) {
+		                    	html2 += '<a href="<?php echo base_url('/pm/selisih_pm')?>" type="button" class="btn btn-success"><i class="fas fa-angle-double-right"></i>Selisih GAP</a>';
+		                    }
 		                    $('#show_data').html(html);
+		                    $('#btn_next').html(html2);
 		                    $('#add-row').dataTable({
 		                        "searching": false,
 		                        "paging":   false,

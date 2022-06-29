@@ -10,7 +10,7 @@ class M_user extends Model
     protected $primaryKey = 'id';
 
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['id','username','nip_nim', 'password', 'nama', 'role', 'status', 'role_id', 'created_at', 'updated_at', 'aktif'];
+    protected $allowedFields = ['id','username','nip_nim','prodi', 'password', 'nama', 'role', 'status', 'role_id', 'created_at', 'updated_at', 'aktif'];
 
     public function getProfile()
     {	

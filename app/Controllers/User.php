@@ -54,9 +54,10 @@ class User extends BaseController
         }else{
              if($isDataValid){
 	            $data = $data_user->insert([
-	                  'username' => $this->request->getPost('username'),
+	              'username' => $this->request->getPost('username'),
 			          'password' => md5($this->request->getPost('password')),
-                      'nama'     => $this->request->getPost('nama'),
+                'nama'     => $this->request->getPost('nama'),
+                'prodi'     => $this->request->getPost('prodi'),
 			          'nip_nim'  => $this->request->getPost('nip_nim'),
 			          'role' 	 => $r,
 			          'status' 	 => 1,
@@ -97,6 +98,7 @@ class User extends BaseController
               $hasil=array(
                   'id' => $data->id,
                   'nama' => $data->nama,
+                  'prodi' => $data->prodi,
                   'nip_nim' => $data->nip_nim,
                   'username' => $data->username,
                   'role_id' => $data->role_id,
@@ -111,6 +113,7 @@ class User extends BaseController
         $id=$this->request->getPost('id');
         $role=$this->request->getPost('role');
         $name=$this->request->getPost('name');
+        $prodi=$this->request->getPost('prodi');
         $nip_nim=$this->request->getPost('nip_nim');
         $username=$this->request->getPost('username');
         if ($role==1) {
@@ -134,6 +137,7 @@ class User extends BaseController
                 "role" => $r,
                 "role_id" => $role,
                 "nama" => $name,
+                "prodi" => $prodi,
                 "nip_nim" => $nip_nim,
                 "username" => $username
             ]);

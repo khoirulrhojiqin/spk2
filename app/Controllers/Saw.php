@@ -36,8 +36,10 @@ class Saw extends BaseController
   // }
 
    public function show_saw_normalisasi(){
+     $id = session()->get('id');
+     // $id = '3';
      $data_kriteria = new M_saw();
-     $data = $data_kriteria->findAll();
+     $data = $data_kriteria->where('id_user', $id)->findAll();
      echo json_encode($data);
     }
    
@@ -70,6 +72,7 @@ class Saw extends BaseController
              if($isDataValid){
 	            $data = $data_kriteria->insert([
                 'alternatif' => $this->request->getPost('alternatif'),
+                'id_user' => session()->get('id'),
                 'k1' => $this->request->getPost('k1'),
                 'k2' => $this->request->getPost('k2'),
                 'k3' => $this->request->getPost('k3'),
@@ -194,9 +197,11 @@ class Saw extends BaseController
       foreach ($get->getResult() as $row) {
       $hsl = (($ad_k1*$row->k1)+($ad_k2*$row->k2)+($ad_k3*$row->k3)+($komp_k1*$row->k4)+($komp_k2*$row->k5)+($komp_k3*$row->k6)+($meng_k1*$row->k7)+($meng_k2*$row->k8)+($meng_k3*$row->k9)+($meng_k4*$row->k10)+($wan_k1*$row->k11)+($wan_k2*$row->k12));
       $h = (round($hsl,2)*100).'%';
-
+      $id_user = session()->get('id');
         // Insert rank
         $dx = array(
+           'prodi' => session()->get('prodi'),
+           'id_user' => $id_user,
            'nama' => $row->alternatif,
            'rank' => $h
          );
