@@ -184,6 +184,10 @@ class User extends BaseController
         $hp=$this->request->getPost('hp');
         $alamat=$this->request->getPost('alamat');
         $about=$this->request->getPost('about');
+        $prodi=$this->request->getPost('prodi');
+        $matkul=$this->request->getPost('matkul');
+        $n_matkul=$this->request->getPost('n_matkul');
+        $n_ipk=$this->request->getPost('n_ipk');
 
         $data = array(
           'id_user' => $id,
@@ -193,6 +197,10 @@ class User extends BaseController
           'no_hp' => $hp,
           'alamat' => $alamat,
           'tentang_saya' => $about,
+          'prodi' => $prodi,
+          'matkul' => $matkul,
+          'n_matkul' => $n_matkul,
+          'n_ipk' => $n_ipk
         );
         $db = \Config\Database::connect();
         $data_user = $db->table('m_user_detail');
@@ -260,6 +268,34 @@ class User extends BaseController
         $data = $data_user->getBerkas()->getResult();
 
         echo json_encode($data);
+    }
+
+    function get_prodi(){
+      $prodi = new M_user();
+      // $get = $prodi->getNilai_akhir();
+        if (isset($_GET['term'])) {
+            $result = $prodi->search_prodi($_GET['term']);
+            // if ($result->findAll() > 0) {
+            // var_dump($result);die();
+            foreach ($result->getResult() as $row)
+                $arr_result[] = $row->prodi;
+                echo json_encode($arr_result);
+            // }
+        }
+    }
+
+    function get_matkul(){
+      $prodi = new M_user();
+      // $get = $prodi->getNilai_akhir();
+        if (isset($_GET['term'])) {
+            $result = $prodi->search_matkul($_GET['term']);
+            // if ($result->findAll() > 0) {
+            // var_dump($result);die();
+            foreach ($result->getResult() as $row)
+                $arr_result[] = $row->mata_kuliah;
+                echo json_encode($arr_result);
+            // }
+        }
     }
 
 }

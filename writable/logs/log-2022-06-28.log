@@ -1,0 +1,211 @@
+CRITICAL - 2022-06-28 06:26:36 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\User.php(277): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 277, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 06:29:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 06:29:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 06:31:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 06:36:55 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\User.php(277): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 277, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 06:37:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 06:37:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 06:38:31 --> Object of class stdClass could not be converted to int
+#0 C:\laragon\www\spk2\app\Controllers\User.php(276): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\laragon\\www\\...', 276, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 06:39:33 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\laragon\\www\\...', 276, Array)
+#1 C:\laragon\www\spk2\app\Controllers\User.php(276): count('Sistem Informas...')
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-28 06:40:22 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\User.php(277): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 277, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 06:40:22 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\User.php(277): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 277, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 06:40:24 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\User.php(277): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 277, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 06:51:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 06:53:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 06:56:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+#0 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-28 07:46:25 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\User.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 278, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 08:33:43 --> Undefined property: App\Controllers\Pm::$input
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(476): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 476, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_sub_category()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 08:37:34 --> Undefined property: App\Controllers\Pm::$input
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(476): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 476, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_sub_category()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 08:41:03 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(468): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 468, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_mahasiswa()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-28 09:06:55 --> Undefined variable: arr_result
+#0 C:\laragon\www\spk2\app\Controllers\Pm.php(468): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 468, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Pm->get_mahasiswa()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pm))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-28 09:54:14 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+CRITICAL - 2022-06-28 09:54:14 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_user.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\spk2\app\Controllers\User.php(277): App\Models\M_user->search_prodi('si')
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-28 09:54:14 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+CRITICAL - 2022-06-28 09:54:14 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_user.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\spk2\app\Controllers\User.php(277): App\Models\M_user->search_prodi('sis')
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-28 09:55:47 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+CRITICAL - 2022-06-28 09:55:47 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_user.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\spk2\app\Controllers\User.php(277): App\Models\M_user->search_prodi('s')
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-28 09:55:49 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+CRITICAL - 2022-06-28 09:55:49 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_user.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\spk2\app\Controllers\User.php(277): App\Models\M_user->search_prodi('ss')
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-28 09:55:50 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+CRITICAL - 2022-06-28 09:55:50 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_user.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\spk2\app\Controllers\User.php(277): App\Models\M_user->search_prodi('s')
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-28 09:55:51 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+CRITICAL - 2022-06-28 09:55:51 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'spk.m_prodi.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 C:\laragon\www\spk2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\spk2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\spk2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\spk2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\spk2\app\Models\M_user.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\spk2\app\Controllers\User.php(277): App\Models\M_user->search_prodi('sis')
+#6 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\User->get_prodi()
+#7 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

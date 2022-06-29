@@ -121,6 +121,20 @@ class M_pm extends Model
       $temp->insert($data);
       
     }
+
+    function get_sub_category($nama){
+        $db = \Config\Database::connect();  
+        // $temp = $db->table('m_user');
+
+        // $query = getWhere(['nama' => $id], $limit, $offset);
+        // $query = $temp->get_where('sub_category', array('subcategory_category_id' => $category_id));
+        $query = $db->query("
+            SELECT * FROM m_user a
+            JOIN m_user_detail b ON a.id=b.id_user
+            WHERE a.nama='$nama';
+            ");
+        return $query;
+    }
     //   return $a;
     // } 
 

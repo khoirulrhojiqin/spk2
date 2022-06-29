@@ -1,6 +1,6 @@
 <?= $this->extend('layout/index') ?>
 <?= $this->section('content') ?>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-ui.css')?>">
 <style type="text/css">
 	.ui-autocomplete-input {
   /*border: none; */
@@ -149,11 +149,11 @@
 																	<label>IPK (K01)</label>
 																		<select name="addIpk" id="addIpk" class="form-control" required>
 							                                                <option >-Pilih-</option>
-							                                                <option value="5">3.51 - 4.00</option>
+							                                                <!-- <option value="5">3.51 - 4.00</option>
 							                                                <option value="4">3.01 - 3.50</option>
 							                                                <option value="3">2.53 - 3.00</option>
 							                                                <option value="2">2.04 - 2.50</option>
-							                                                <option value="1">1.01 - 2.00</option>
+							                                                <option value="1">1.01 - 2.00</option> -->
 							                                             </select>
 																</div>
 															</div>
@@ -260,7 +260,7 @@
 															</div>
 															<div class="col-sm-6">
 																<div class="form-group form-group-default">
-																	<label>Komitmen (K10)</label>
+																	<label>Teamwork (K10)</label>
 																		<select name="addKomitmen" id="addKomitmen" class="form-control" required>
 							                                                <option >-Pilih-</option>
 							                                                <option value="5">Sangat Baik</option>
@@ -273,7 +273,7 @@
 															</div>
 															<div class="col-sm-6">
 																<div class="form-group form-group-default">
-																	<label>Konsisten (K11)</label>
+																	<label>Suara (K11)</label>
 																		<select name="addKonsisten" id="addKonsisten" class="form-control" required>
 							                                                <option >-Pilih-</option>
 							                                                <option value="5">Sangat Baik</option>
@@ -462,7 +462,7 @@
 															</div>
 															<div class="col-sm-6">
 																<div class="form-group form-group-default">
-																	<label>Komitmen (K10)</label>
+																	<label>Teamwork (K10)</label>
 																		<select name="editKomitmen" id="editKomitmen" class="form-control" required>
 							                                                <option >-Pilih-</option>
 							                                                <option value="5">Sangat Baik</option>
@@ -475,7 +475,7 @@
 															</div>
 															<div class="col-sm-6">
 																<div class="form-group form-group-default">
-																	<label>Konsisten (K11)</label>
+																	<label>Suara (K11)</label>
 																		<select name="editKonsisten" id="editKonsisten" class="form-control" required>
 							                                                <option >-Pilih-</option>
 							                                                <option value="5">Sangat Baik</option>
@@ -589,35 +589,73 @@
 					$("#addName").autocomplete({
 			              source: "<?php echo base_url('/pm/get_mahasiswa/?');?>"
 			            });
+
+					 /* event listener */
+				    document.getElementsByName("addName")[0].addEventListener('change', doThing);
+					function doThing(){
+		                var id=$(this).val();
+		                $.ajax({
+		                    url : "<?php echo site_url('/pm/get_sub_category');?>",
+		                    method : "POST",
+		                    data : {id: id},
+		                    async : true,
+		                    dataType : 'json',
+		                    success: function(data){
+		                        // alert(data);
+		                        var html = '';
+		                        var html2 = '';
+		                        var i;
+		                        for(i=0; i<data.length; i++){
+		                        	if (data[i].n_matkul==5) {
+		                        		var matkul = 'A+'; 
+		                        	}else if (data[i].n_matkul==4) {
+		                        		var matkul = 'A';
+		                        	}else if (data[i].n_matkul==3) {
+		                        		var matkul = 'A-';
+		                        	}else if (data[i].n_matkul==2) {
+		                        		var matkul = 'B+';
+		                        	}else if (data[i].n_matkul==1) {
+		                        		var matkul = 'B';
+		                        	}
+		                            html += '<option value='+data[i].n_ipk+'>'+data[i].n_ipk+'</option>';
+		                            html2 += '<option value='+data[i].n_matkul+'>'+matkul+'</option>';
+		                        }
+		                        $('#addIpk').html(html);
+		                        $('#addMatkul').html(html2);
+		 
+		                    }
+		                });
+		                return false;
+		            }; 
 				});
 
-				let result = document.getElementById('addMatkul')
-				let select = document.getElementById('addIpk')
+				// let result = document.getElementById('addMatkul')
+				// let select = document.getElementById('addIpk')
 			
-				function load(nilai){
-					// for(i=0; i< nilai; i++){
-						if ($('#addIpk').val()=='5') {
-							result.innerHTML += "<option value='5'>A</option>"
-						}else if ($('#addIpk').val()=='4'){
-							result.innerHTML += "<option value='4'>A-</option>"
-						}else if ($('#addIpk').val()=='3'){
-							result.innerHTML += "<option value='3'>B</option>"
-						}else if ($('#addIpk').val()=='2'){
-							result.innerHTML += "<option value='2'>B-</option>"
-						}else if ($('#addIpk').val()=='1'){
-							result.innerHTML += "<option value='1'>C</option>"
-						}else{
+				// function load(nilai){
+				// 	// for(i=0; i< nilai; i++){
+				// 		if ($('#addIpk').val()=='5') {
+				// 			result.innerHTML += "<option value='5'>A</option>"
+				// 		}else if ($('#addIpk').val()=='4'){
+				// 			result.innerHTML += "<option value='4'>A-</option>"
+				// 		}else if ($('#addIpk').val()=='3'){
+				// 			result.innerHTML += "<option value='3'>B</option>"
+				// 		}else if ($('#addIpk').val()=='2'){
+				// 			result.innerHTML += "<option value='2'>B-</option>"
+				// 		}else if ($('#addIpk').val()=='1'){
+				// 			result.innerHTML += "<option value='1'>C</option>"
+				// 		}else{
 							
-						}
+				// 		}
 						
-					// }
-				}
+				// 	// }
+				// }
 				
-				select.addEventListener('change', function(){
-					let nilai = select.value
-					result.innerHTML = ""
-					load(nilai)
-				})
+				// select.addEventListener('change', function(){
+				// 	let nilai = select.value
+				// 	result.innerHTML = ""
+				// 	load(nilai)
+				// })
 			</script>
 			<script type="text/javascript">
 				$(document).ready(function() {

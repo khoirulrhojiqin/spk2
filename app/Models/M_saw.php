@@ -56,12 +56,12 @@ class M_saw extends Model
             (SELECT MIN(k3)FROM m_saw_normalisasi)/k3 AS k3,
             k4/(SELECT MAX(k4)FROM m_saw_normalisasi) AS k4,
             k5/(SELECT MAX(k5)FROM m_saw_normalisasi) AS k5,
-            (SELECT MIN(k6)FROM m_saw_normalisasi)/k6 AS k6,
-            (SELECT MIN(k7)FROM m_saw_normalisasi)/k7 AS k7,
+            k6/(SELECT MAX(k6)FROM m_saw_normalisasi) AS k6,
+            k7/(SELECT MAX(k7)FROM m_saw_normalisasi) AS k7,
             k8/(SELECT MAX(k8)FROM m_saw_normalisasi) AS k8,
-            k9/(SELECT MAX(k9)FROM m_saw_normalisasi) AS k9,
+            (SELECT MIN(k9)FROM m_saw_normalisasi)/k9 AS k9,
             k10/(SELECT MAX(k10)FROM m_saw_normalisasi) AS k10,
-            k11/(SELECT MAX(k11)FROM m_saw_normalisasi) AS k11,
+            (SELECT MIN(k11)FROM m_saw_normalisasi)/k11 AS k11,
             (SELECT MIN(k12)FROM m_saw_normalisasi)/k12 AS k12
             FROM m_saw_normalisasi;
             ");

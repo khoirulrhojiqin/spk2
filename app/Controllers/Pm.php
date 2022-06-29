@@ -470,5 +470,13 @@ class Pm extends BaseController
         }
     }
     
+    function get_sub_category(){
+        $mahasiswa = new M_pm();
+
+        $nama = $this->request->getPost('id');
+        $data = $mahasiswa->get_sub_category($nama)->getResult();
+        // $data = $this->product_model->get_sub_category($category_id)->result();
+        echo json_encode($data);
+    }
 
 }

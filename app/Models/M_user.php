@@ -45,4 +45,31 @@ class M_user extends Model
     	$query = $db->table('m_berkas')->getWhere(['id_user' => $id]);
     	return $query;
     }
+
+    public function search_prodi($title){
+        $db = \Config\Database::connect();
+        $builder = $db->table('m_prodi');
+
+        $builder->select('prodi');
+        $builder->like('prodi', $title, 'both');
+        $builder->orderBy('prodi', 'ASC');
+        $builder->groupBy('prodi');
+        // $builder->where('role', 'mahasiswa');
+        $builder->limit(10);
+        $r = $builder->get();
+        return $r;
+    }
+
+    public function search_matkul($title){
+        $db = \Config\Database::connect();
+        $builder = $db->table('m_prodi');
+
+        $builder->select('*');
+        $builder->like('mata_kuliah', $title, 'both');
+        $builder->orderBy('mata_kuliah', 'ASC');
+        // $builder->where('role', 'mahasiswa');
+        $builder->limit(10);
+        $r = $builder->get();
+        return $r;
+    }
 }

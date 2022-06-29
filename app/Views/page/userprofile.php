@@ -1,7 +1,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"> -->
 	<?= $this->extend('layout/index') ?>
 	<?= $this->section('content') ?>
-
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-ui.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/csx/bootstrap.min.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/csx/atlantis.css')?>">
 			<div class="content">
@@ -63,6 +63,10 @@
 									$hp='';
 									$alamat='';
 									$about='';
+									$prodi='';
+									$matkul='';
+									$n_ipk='';
+									$n_matkul='';
 									foreach ($user_profil->getResult() as $r){
 										$email .= $r->email;
 										$tgl .= $r->tgl_lahir;  
@@ -70,6 +74,10 @@
 										$hp .= $r->no_hp;
 										$alamat .= $r->alamat;
 										$about .= $r->tentang_saya;
+										$prodi .= $r->prodi;
+										$matkul .= $r->matkul;
+										$n_matkul .= $r->n_matkul;
+										$n_ipk .= $r->n_ipk;
 									}
 
 								?>		
@@ -87,6 +95,44 @@
 											</div>
 										</div>
 									</div>
+									<?php 
+									$role = session()->get('role_id');
+									if ($role=='3') {?>
+									<div class="row mt-3">
+										<div class="col-md-6">
+											<div class="form-group form-group-default">
+												<label>Prodi</label>
+												<input type="text" class="form-control" name="p_prodi" id="p_prodi" placeholder="Prodi" value="<?=$prodi?>">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group form-group-default">
+												<label>Mata Kuliah</label>
+												<input type="text" class="form-control" name="p_matkul" id="p_matkul" placeholder="Mata Kuliah" value="<?=$matkul?>">
+											</div>
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-md-6">
+											<div class="form-group form-group-default">
+												<label>Nilai Ipk</label>
+												<input type="number" step="0.01" class="form-control" name="p_n_ipk" id="p_n_ipk" placeholder="Nilai IPK" value="<?=$n_ipk?>">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group form-group-default">
+												<label>Nilai Mata Kuliah</label>
+												<select class="form-control" id="p_n_matkul" nama="p_n_matkul">
+													<option value="5" <?php if ($n_matkul=='5') echo "selected";?>>A+</option>
+													<option value="4" <?php if ($n_matkul=='4') echo "selected";?>>A</option>
+													<option value="3" <?php if ($n_matkul=='3') echo "selected";?>>A-</option>
+													<option value="2" <?php if ($n_matkul=='2') echo "selected";?>>B+</option>
+													<option value="1" <?php if ($n_matkul=='1') echo "selected";?>>B</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<?php } ?>
 									<div class="row mt-3">
 										<div class="col-md-4">
 											<div class="form-group form-group-default">
@@ -126,7 +172,6 @@
 											</div>
 										</div>
 									</div>
-									
 									<div class="text-right mt-3 mb-3">
 										<button class="btn btn-success" id="editProfil">Save</button>
 										<!-- <button class="btn btn-danger">Reset</button> -->
@@ -237,6 +282,19 @@
 			<script src="<?php echo base_url('assets/js/plugin/moment/moment.min.js')?>"></script><!-- DateTimePicker -->
 			<script src="<?php echo base_url('assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js')?>"></script>
 			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#p_prodi").autocomplete({
+			              source: "<?php echo base_url('/user/get_prodi/?');?>"
+			            });
+
+					var id = $('#p_prodi').val();
+					$("#p_matkul").autocomplete({
+						// var id = $('#p_prodi').val();
+			              source: "<?php echo base_url('/user/get_matkul/?');?>"
+			            });
+				});
+			</script>
+			<script type="text/javascript">
 				$('#datepicker').datetimepicker({
 					format: 'YYYY-MM-DD',
 				});
@@ -321,11 +379,15 @@
 			            var hp 		= $('#p_hp').val();
 			            var alamat 	= $('#p_alamat').val();
 			            var about 	= $('#p_about').val();
+			            var prodi 	= $('#p_prodi').val();
+			            var matkul 	= $('#p_matkul').val();
+			            var n_matkul= $('#p_n_matkul').val();
+			            var n_ipk 	= $('#p_n_ipk').val();
 			            $.ajax({
 			                type : "POST",
 			                url  : "<?php echo base_url('/user/update_profil')?>",
 			                dataType : "JSON",
-			                data : {id:id, email:email, tgl:tgl, gender:gender, hp:hp, alamat:alamat, about:about},
+			                data : {id:id, email:email, tgl:tgl, gender:gender, hp:hp, alamat:alamat, about:about, prodi:prodi, matkul:matkul, n_matkul:n_matkul, n_ipk:n_ipk},
 			                success: function(data){
 			                    $('#password').val("");
 			                    $.notify({
