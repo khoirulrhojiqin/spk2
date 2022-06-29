@@ -144,7 +144,7 @@ class Pm extends BaseController
         $query = $data_kriteria->where(["alternatif" => $alternatif])->countAllResults();
         // $this->db->table($this->table)->where(["status" => 1])->countAllResults(); //bisa begini
         if ($query != 0 ) {
-            echo json_encode('gagal');
+            echo json_encode('gagal!, mahasiswa sudah di input');
         }else{
              if($isDataValid){
 	            $data = $data_kriteria->insert([

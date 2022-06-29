@@ -45,6 +45,7 @@ class M_pm extends Model
 
     // }
     public function search_mahasiswa($title){
+        // $prodi = session()->get('prodi');
         $db = \Config\Database::connect();
         $builder = $db->table('m_user');
 
