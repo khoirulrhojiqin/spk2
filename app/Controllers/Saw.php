@@ -63,8 +63,20 @@ class Saw extends BaseController
         $k11 = $this->request->getPost('k11');
         $k12 = $this->request->getPost('k12');
 
+        if ($k1 >= 3.51) {
+          $ipk = 5;
+        }elseif ($k1 >= 3.01) {
+          $ipk = 4;
+        }elseif ($k1 >= 2.51) {
+          $ipk = 3;
+        }elseif ($k1 >= 2.01) {
+          $ipk = 2;
+        }elseif ($k1 >= 1.01) {
+          $ipk = 1;
+        }
         $data_kriteria = new M_saw();
         $query = $data_kriteria->where(["alternatif" => $alternatif])->countAllResults();
+        // echo($ipk); die();
         // $this->db->table($this->table)->where(["status" => 1])->countAllResults(); //bisa begini
         if ($query != 0 ) {
             echo json_encode('gagal');
@@ -73,7 +85,7 @@ class Saw extends BaseController
 	            $data = $data_kriteria->insert([
                 'alternatif' => $this->request->getPost('alternatif'),
                 'id_user' => session()->get('id'),
-                'k1' => $this->request->getPost('k1'),
+                'k1' => $ipk,
                 'k2' => $this->request->getPost('k2'),
                 'k3' => $this->request->getPost('k3'),
                 'k4' => $this->request->getPost('k4'),
