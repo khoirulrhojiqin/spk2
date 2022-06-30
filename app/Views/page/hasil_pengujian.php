@@ -22,6 +22,8 @@
 						</ul>
 					</div>
 					<div class="row">
+						<?php if (session()->get('role')=='mahasiswa' ) {?>
+
 						<?php 
 						$id = session()->get('prodi');
        					$nama = session()->get('nama');
@@ -66,7 +68,7 @@
 							</div>
 							</div>
 				        <?php } ?>
-						
+						<?php } ?>
 
 						<div class="col-md-12">
 							<div class="card">
