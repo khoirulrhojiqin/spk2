@@ -111,3 +111,74 @@ CRITICAL - 2022-06-30 10:08:11 --> Call to undefined method CodeIgniter\Database
 #6 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-06-30 11:07:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(18): App\Models\M_hasil->getSaw()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:07:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(33): App\Models\M_hasil->getPm()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_pm()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:07:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(18): App\Models\M_hasil->getSaw()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:07:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(33): App\Models\M_hasil->getPm()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_pm()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:08:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(18): App\Models\M_hasil->getSaw()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:08:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(33): App\Models\M_hasil->getPm()
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_pm()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:09:29 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 39, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_pm()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:09:29 --> Undefined variable: get
+#0 C:\laragon\www\spk2\app\Models\M_hasil.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 44, Array)
+#1 C:\laragon\www\spk2\app\Controllers\Hasil.php(18): App\Models\M_hasil->getSaw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_saw()
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#4 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-30 11:10:10 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 24, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_saw()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 11:10:10 --> Undefined variable: data
+#0 C:\laragon\www\spk2\app\Controllers\Hasil.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 39, Array)
+#1 C:\laragon\www\spk2\system\CodeIgniter.php(832): App\Controllers\Hasil->get_pm()
+#2 C:\laragon\www\spk2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+#3 C:\laragon\www\spk2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\spk2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

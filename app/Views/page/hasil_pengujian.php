@@ -29,10 +29,13 @@
        					$nama = session()->get('nama');
        					$db = \Config\Database::connect();  
        					$query = $db->query("
-					        SELECT nama, n_akhir 
-					        FROM (SELECT nama, n_akhir FROM m_pm_rank where prodi='$id' and nama='$nama'
-					        ORDER BY n_akhir DESC LIMIT 2) AS Emp 
-					        ORDER BY n_akhir LIMIT 2;
+       						SELECT * FROM (
+						        SELECT nama, n_akhir 
+						        FROM (SELECT nama, n_akhir FROM m_pm_rank where prodi='$id'
+						        ORDER BY n_akhir DESC LIMIT 2) AS Emp 
+						        ORDER BY n_akhir LIMIT 2
+					        ) as a 
+							WHERE a.nama='$nama';
 				        ");
 				        $nama='';
 				        foreach ($query->getResult() as $d) {
@@ -93,6 +96,7 @@
 											<thead>
 												<tr>
 													<th style="text-align: center;">#</th>
+					                                <th style="text-align: center;">Mata Kuliah</th>
 					                                <th style="text-align: center;">Prodi</th>
 					                                <th style="text-align: center;">Nama</th>
 					                                <th style="text-align: center;">Rank %</th>
@@ -121,6 +125,7 @@
 											<thead>
 												<tr>
 													<th>#</th>
+					                                <th>Mata Kuliah</th>
 					                                <th>Prodi</th>
 					                                <th>Nama</th>
 					                                <th>Administrasi</th>

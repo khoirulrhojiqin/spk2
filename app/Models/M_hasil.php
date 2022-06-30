@@ -16,7 +16,15 @@ class M_hasil extends Model
     {	
         $prodi = session()->get('prodi');
     	$db = \Config\Database::connect();
-    	$query = $db->table('m_pm_rank')->where('prodi',$prodi)->get();
+        $query = $db->query("
+            SELECT a.*,b.matkul FROM(
+            SELECT a.*,b.id as id2 FROM m_pm_rank a
+            JOIN m_user b ON a.nama=b.nama
+            ) a 
+            JOIN m_user_detail b ON a.id2=b.id_user
+            WHERE a.prodi='$prodi'
+            ");
+    	// $query = $db->table('m_pm_rank')->where('prodi',$prodi)->get();
     	return $query;
 
     }   
@@ -24,7 +32,15 @@ class M_hasil extends Model
     public function getSaw(){
         $prodi = session()->get('prodi');
         $db = \Config\Database::connect();  
-        $get = $db->table('m_saw_rank')->where('prodi',$prodi)->get();
+        // $get = $db->table('m_saw_rank')->where('prodi',$prodi)->get();
+        $get = $db->query("
+            SELECT a.*,b.matkul FROM(
+            SELECT a.*,b.id as id2 FROM m_saw_rank a
+            JOIN m_user b ON a.nama=b.nama
+            ) a 
+            JOIN m_user_detail b ON a.id2=b.id_user
+            WHERE a.prodi='$prodi'
+            ");
         return $get;
     }
 

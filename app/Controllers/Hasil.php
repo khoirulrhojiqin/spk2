@@ -18,7 +18,7 @@ class Hasil extends BaseController
     $get = $saw->getSaw();
     $no=1;
     foreach ($get->getResult() as $d) {
-      $data[] = array($no++,$d->prodi,$d->nama,$d->rank);
+      $data[] = array($no++,$d->matkul,$d->prodi,$d->nama,$d->rank);
     }
      $output = array(
             "data" => $data
@@ -33,7 +33,7 @@ class Hasil extends BaseController
     $get = $saw->getPm();
     $no=1;
     foreach ($get->getResult() as $d) {
-      $data[] = array($no++,$d->prodi,$d->nama,$d->n_administrasi,$d->n_kompetensi,$d->n_mengajar,$d->n_wawancara,$d->n_akhir);
+      $data[] = array($no++,$->matkul,$d->prodi,$d->nama,$d->n_administrasi,$d->n_kompetensi,$d->n_mengajar,$d->n_wawancara,$d->n_akhir);
     }
      $output = array(
             "data" => $data
