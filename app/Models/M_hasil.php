@@ -28,7 +28,16 @@ class M_hasil extends Model
         return $get;
     }
 
-   
+   public function getNilai_akhir(){
+        $id = session()->get('prodi');
+        $nama = session()->get('nama');
+        $db = \Config\Database::connect();  
+        // $get = $db->table('m_pm_rank')->where('prodi',$id)->get();
+        $query = $db->query("
+        SELECT nama, n_akhir FROM (SELECT nama, n_akhir FROM m_pm_rank where prodi='$id' ORDER BY n_akhir DESC LIMIT 2) AS Emp ORDER BY n_akhir LIMIT 2;
+        ");
+        return $query;
+    }
 
     // public function getNilai_akhir(){
     //     $db = \Config\Database::connect();  
